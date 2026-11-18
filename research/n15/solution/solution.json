@@ -1,0 +1,28 @@
+{
+  "n": 15,
+  "degree": 2869,
+  "coefficients_order": "ascending",
+  "coefficients_sha256": "6de06ba1a0c174b3968ce87dee8225d95224b092a10f9d9b856a42580b5ff42f",
+  "interval": [
+    "0.318142930859262836359491181649935005186663866157651845538266",
+    "0.318142930859262836359491181649935005186663866157651845538267"
+  ],
+  "endpoint_signs": [
+    1,
+    -1
+  ],
+  "ordered_centers_sha256": "00830808b932f6f73b799df6ba9dd6ea388720bf09e7d30c57fd039f2e34b35d",
+  "root_sha256": "36cbde7c21a005eb10ab60af5a975ca41e6b43af6f6c974943b4f0a03cac8a57",
+  "system_sha256": "c98c528c2b66d5e25148944ac45545a3dda155b3cfcdd748d59adbe6059f8d49",
+  "global_replay_sha256": "c601c0504a64f36289a02145103f79acfc1ce155d9418980fff3c51d45e6ee01",
+  "axis_chain_sha256": "39f9c2535c3d3c59506b1d4ad987c77c7c73e01710bc4f8782635ace99c2aed6",
+  "irreducibility_sha256": "a381bbabb476a80bb763174b4c41bae3d51d272876791fa4e08da758b154cf24",
+  "integer_identity_sha256": "d11f56b386c91f13079f1997543529845a8bcb0f8e815c51d18a6245418fbddc",
+  "binding_sha256": "a3727e50caac13f5683183d2091c614087a404745d0686b338914b5919d46592",
+  "protocol": "diskcover-minpoly-v1",
+  "protocol_script_sha256": "dfc386a07e2639ce26ebbeca043b19f891860fd1efa5e5197d3ca73d213c63f1",
+  "rounded_radius": "0.31814293085926283636",
+  "answer_sha256": "27d58d1f801408165315e66d2d9fcc823b76aa5531581432c84c31dbbe163335",
+  "reference_status": "not_published",
+  "matches_reference": null
+}

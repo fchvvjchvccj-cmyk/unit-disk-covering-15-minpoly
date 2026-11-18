@@ -1,0 +1,33 @@
+{
+  "date_local": "2026-11-18",
+  "command": "scripts/serialized_compute.ps1 python -X utf8 -B n15/solution/verify.py --output-directory .tools/n15-solution-independent-20261118 --threads 5",
+  "exit_code": 0,
+  "verification_elapsed_seconds_approx": 933,
+  "fixed_input_revision": "ecadc602d1f93c74d528d222dae24178ac255e6c",
+  "enumerated_types": 11950884,
+  "metric_exclusions": 11907870,
+  "noncandidate_cases": 43013,
+  "unresolved_leaves": 0,
+  "unique_global_root_linked_to_axis": true,
+  "remaining_rational_factor_degrees": [
+    0,
+    2869
+  ],
+  "isolation_endpoint_signs": [
+    1,
+    -1
+  ],
+  "scalar_identities_and_source_box_match_archive": true,
+  "integer_point_count": 24000,
+  "integer_lower_bits": 1122055293,
+  "resultant_upper_bits": 1120516517,
+  "isolated_root_equals_global_optimal_radius": true,
+  "byte_identical_delivery_files_sha256": {
+    "coefficients.json": "6de06ba1a0c174b3968ce87dee8225d95224b092a10f9d9b856a42580b5ff42f",
+    "ordered-centers.json": "00830808b932f6f73b799df6ba9dd6ea388720bf09e7d30c57fd039f2e34b35d",
+    "solution.json": "51d83e279dbbd5f96b42a20ed5074261c31711a909c33fb1a66243b2c688508f"
+  },
+  "protocol": "diskcover-minpoly-v1",
+  "answer_sha256": "27d58d1f801408165315e66d2d9fcc823b76aa5531581432c84c31dbbe163335",
+  "published_reference": "not_published"
+}

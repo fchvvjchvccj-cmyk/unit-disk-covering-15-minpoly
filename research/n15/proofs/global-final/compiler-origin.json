@@ -1,0 +1,206 @@
+{
+  "origin_lock_path": "D:\\sxyp\\n15\\algebra\\elimination\\native-paged\\build-lock.json",
+  "origin_lock_sha256": "3fcd3db4173dda5b80c5ea6f8832943d143b7e70041cdc4bc98a20748e62c2ff",
+  "packages": [
+    {
+      "name": "mingw-w64-ucrt-x86_64-binutils",
+      "version": "2.47-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-binutils-2.47-4-any.pkg.tar.zst",
+      "sha256": "c18a40b871bfddb5da030f015003479ca85625afde1cb89f7313945e6151397d",
+      "download_bytes": 6625838
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-cc-libs",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-cc-libs-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "b05218ea8b8f2142d2042cd01843810f4cf9345af6e5e7fe39395590cd55b2dc",
+      "download_bytes": 2377
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-crt",
+      "version": "14.0.0.r426.g4564ee4b5-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-crt-14.0.0.r426.g4564ee4b5-1-any.pkg.tar.zst",
+      "sha256": "5d1c1f2c3859e690181d9ebcada1640a6744ab8dd5643b4bdbc7fe258af95037",
+      "download_bytes": 4065694
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-flint",
+      "version": "3.6.0-3",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-flint-3.6.0-3-any.pkg.tar.zst",
+      "sha256": "f0d9ee145432bf393db5a3b20d93df0bfd97be123d50e1db653c9183ac0e59af",
+      "download_bytes": 8820718
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-gcc",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gcc-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "dfde2ee85df123a4afc43ac7bf8d4c379ddb919010c4b79a17db0862e030b2d1",
+      "download_bytes": 48531195
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-gettext-runtime",
+      "version": "1.0-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst",
+      "sha256": "ba693dda4ac375af76ce481ff3a6e7481286546cc7dc6d56c7021dae34084157",
+      "download_bytes": 417977
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-gmp",
+      "version": "6.3.0-2",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gmp-6.3.0-2-any.pkg.tar.zst",
+      "sha256": "e82a75968a556484a50084578238a84eb60fb93e34986fd6695c537975bd39ea",
+      "download_bytes": 592359
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-headers",
+      "version": "14.0.0.r426.g4564ee4b5-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-headers-14.0.0.r426.g4564ee4b5-1-any.pkg.tar.zst",
+      "sha256": "b81c19e278ba0fc9f6ad0326d4aef64aea93053a6272916fb4c07069ac0215d0",
+      "download_bytes": 6890648
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-isl",
+      "version": "0.28-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-isl-0.28-1-any.pkg.tar.zst",
+      "sha256": "8594e01a253d5a72646c586cf5a1626c1b1c2be7c30060fe67abd9bebe3fe223",
+      "download_bytes": 1540719
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libatomic",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libatomic-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "81d960422f47c9cff742aa5a6dd6c587ba39e5da64738d903730e79577479582",
+      "download_bytes": 25427
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libgcc",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libgcc-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "de65b4adae899d9278427402e29d03860bacba481794460f3a1d078610cbb783",
+      "download_bytes": 77220
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libgfortran",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libgfortran-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "3aaf10ab44d35fb9423cc2b544ec964da55c473b0e198ec9c81c93ed67f6c2df",
+      "download_bytes": 1222957
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libgomp",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libgomp-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "f34d39ab72a0a202dc18504db82aee4ab2a7cec9bc5c10daffdb9c22d87a1f90",
+      "download_bytes": 311240
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libiconv",
+      "version": "1.19-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst",
+      "sha256": "9a500f38c2b91808741c62fae746b3e9110b33a1ecf5c30fa0c66dbedddf7e16",
+      "download_bytes": 744750
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libquadmath",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libquadmath-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "75960aa837a7fc6dc8313afb11014bf7f42548ab6067498d0b561cc3c490b5b2",
+      "download_bytes": 179389
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libstdc++",
+      "version": "16.2.0-4",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libstdc++-16.2.0-4-any.pkg.tar.zst",
+      "sha256": "2211dbbf1220287e49f5d66bb6cb09ee5a157901a485197553c9a940cc902d5b",
+      "download_bytes": 795771
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+      "version": "14.0.0.r426.g4564ee4b5-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r426.g4564ee4b5-1-any.pkg.tar.zst",
+      "sha256": "f8de8153bbc0e47ba244a423c12c426fa1d9f56395117ecaa34c6ad6ebed6ca3",
+      "download_bytes": 30667
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-mpc",
+      "version": "1.4.1-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-mpc-1.4.1-1-any.pkg.tar.zst",
+      "sha256": "f06556e811c711ce91609484e31d358e4f495811ba29813bf2284a3b236d82ce",
+      "download_bytes": 139585
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-mpfr",
+      "version": "4.2.2-3",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-mpfr-4.2.2-3-any.pkg.tar.zst",
+      "sha256": "6b70a275d2ec75c70aa50a236c218e6b7ee9a5ab4c6d52cb0b580267b7d200fe",
+      "download_bytes": 553765
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-openblas",
+      "version": "0.3.34-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-openblas-0.3.34-1-any.pkg.tar.zst",
+      "sha256": "d9e14c9440d9aa70b6d09cdf0b8117995d181ced9c3d233ad7b62a907982add5",
+      "download_bytes": 12269481
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-tzdata",
+      "version": "2026e-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-tzdata-2026e-1-any.pkg.tar.zst",
+      "sha256": "f1809089f8ed5cec858ae8584289172896eb921be1e78ba583555f74e9015428",
+      "download_bytes": 225916
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-windows-default-manifest",
+      "version": "20260815-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-windows-default-manifest-20260815-1-any.pkg.tar.zst",
+      "sha256": "b39039f754a600cc0dec49df7d675a59a3cb2b63691d91b4ae60735ee7075eca",
+      "download_bytes": 2652
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-winpthreads",
+      "version": "14.0.0.r426.g4564ee4b5-1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-winpthreads-14.0.0.r426.g4564ee4b5-1-any.pkg.tar.zst",
+      "sha256": "c24b627938c592666c7c2f73cc83be29c552f935f6c6cc25b86b20959629bfee",
+      "download_bytes": 45661
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-zlib",
+      "version": "1.3.2-2",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst",
+      "sha256": "841401182976d2f9e17e5c0ebaac51f2a8014140ea53d67625e91c8fb3c85ea0",
+      "download_bytes": 111475
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-zstd",
+      "version": "1.5.7-2",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst",
+      "sha256": "dbdb8427280046a2b41697780aa4c52983b708082b0da4755951dc3bea96ca89",
+      "download_bytes": 668277
+    }
+  ],
+  "note": "Existing portable toolchain package lock; flint/openblas packages are present but not used by this proof. Current Boost lock is separate.",
+  "current_runtime_sha256": {
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libasprintf-0.dll": "fbc44a3471e250ac170cd8f104c84d225db2a8e9120632431031f2b9615c3ee6",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libatomic-1.dll": "7a3797b3b1b243b9ca884026861ce8c996e7f06d606286089d010b662cc4617d",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libcharset-1.dll": "7c85068295240f830860c04ea9a4863eaefd83fe3755fb48180a15573e7bc806",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libflint-24.dll": "97c6b46b1031f9d03f71b44d4414c0d39ea8387d5665498fcb4bdfc72f287c52",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libgcc_s_seh-1.dll": "68ca4574b331402879dec403ba4f14491c9b8fc4aa3f4a41432008714b9bc5df",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libgfortran-5.dll": "dcc55fa1d5e533462006e4d17a0ee7f1384f3bf5d562a269c4f5b089c898d29a",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libgmp-10.dll": "c2567ccf3f410c3411ba7cd4b7ba14f393a0e70a1d0c0593297df6706b5fba96",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libgmpxx-4.dll": "b563feecd50808924f93c9c2cb495bafa3b8ac50f5c9ca55f9f730afa002886c",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libgomp-1.dll": "37d23888447afabf47b0d5c6a1ea79852c3d522315040230c4ed3e1705e90b61",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libiconv-2.dll": "94ec68fb8d342b6c91b6b48a8d95092819cdcd006a7166e0b68062f946afd08a",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libintl-8.dll": "0e5a178731e6be6d115442a6ade3df7f03265cd1fc4338f8b6f86a8001cbf582",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libisl-23.dll": "2b51430c1c61a6e4dfaeb177217261e83787f86bbad66adaba2783c41bae9fca",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libmpc-3.dll": "1b1f6f1de1136abf89dd1aa1d2e29e38e2fa9385f09e864dc9f2aa03bc1abe2d",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libmpfr-6.dll": "b881beb5ed7e3413283ab94f24ab25cd47ed27127774867ae105642ff2fc2e47",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libopenblas.dll": "4b5cbee2aba54a599a031023dcc0d99ebd24988954fe094cf59ed76c004781f6",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libquadmath-0.dll": "0fab4280bc9afe8a5606cb3f46cbceff03d75be2644db56785de5f81670a1f40",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libstdc++-6.dll": "b30dbd914d903992acb28b38455947153886656beafbd91c465c31aa258f9c45",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libwinpthread-1.dll": "76cc52adfcdb8c800813b2ae8da42a908934eb1ee54ce8e9744fc8d703c76ee1",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\libzstd.dll": "48368ab0ca622d0ec12f41ce85d91f22866bf5da92c77a69a06483564c93816c",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\zlib1.dll": "11cd91171765cd65f1c3362e3df67e5f5a618a6b88c8cdec899b802eaf1c7b0d",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\g++.exe": "58efe82fa3ce35005f89d46fe439d7ee54e6889cb7db894019202da691a529a5",
+    ".tools\\msolve-paged\\chain\\ucrt64\\bin\\gcc.exe": "f4120ffea38b73efaf4d770c1942905e220819ae97299c94bfeab3c396b686e2"
+  }
+}

@@ -1,0 +1,1 @@
+{"H_multiplier":"((1-z)(1-z*d^2))^4*(1-z*d^2+r*(1+z*d^2))^2","Q_multiplier":"(1-z*b^2)^2*((1-z)(1-z*d^2))^4","both_chord_endpoints":true,"cleared_equations_terms":[4,609,4529],"field":"QQ(r,e,z,d,l,b)","squared_chord_length":true,"squared_normal_length":true}

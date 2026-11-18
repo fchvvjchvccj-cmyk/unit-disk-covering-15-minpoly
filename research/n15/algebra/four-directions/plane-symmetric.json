@@ -1,0 +1,1 @@
+{"characteristic_zero":false,"degrees":[1424,656],"extra_rational_radii":["9/16","2/5"],"normalization":"X=10/3 取两个互反方向截面的首一公因子","prime":998244353,"sha256":"407d7582c1819e20f801622b844052d645ebdde5b2f42acbf84f511c3d1e14c9","storage":"按方向变量升幂逐行，每行 1425 个小端 uint32，按 r 升幂","training_radii":1470,"universal_identity_proved":false,"variables":["r","X"],"withheld_radii":30}

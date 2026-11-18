@@ -1,0 +1,230 @@
+{
+  "commit": "089584973f41e6374ce110f6e5b5ee456df19352",
+  "repository": "VonEquinox/DiskCoveringSolve",
+  "git_tree_sha256": "6d7a247f038ec89b3c87bde360a154d31820551ee91e74c81645fda37ee74d26",
+  "files": [
+    {
+      "path": "PROOF_zh.md",
+      "bytes": 34364,
+      "git_blob_sha1": "e2c10f5a75974980dd16bf85c37e64056ac45b91",
+      "sha256": "4807219fb66a535286f6865cf6973a820746499a07b10f79be9b4852c974554b",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/PROOF_zh.md",
+      "source_path": "PROOF_zh.md",
+      "source_sha256": "4807219fb66a535286f6865cf6973a820746499a07b10f79be9b4852c974554b",
+      "source_bytes": 34364
+    },
+    {
+      "path": "README.md",
+      "bytes": 3067,
+      "git_blob_sha1": "58d25e8b227261d3ec166e26cc02aeb7036e5596",
+      "sha256": "28fed19b925447b741d8963d7a85745e13eedf01159a17bcb14aa9f9b4b30642",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/README.md",
+      "source_path": "README.md",
+      "source_sha256": "28fed19b925447b741d8963d7a85745e13eedf01159a17bcb14aa9f9b4b30642",
+      "source_bytes": 3067
+    },
+    {
+      "path": "SHA256SUMS_PROOF_INPUTS.txt",
+      "bytes": 2706,
+      "git_blob_sha1": "df3449b513f3d82e2fbcdeb4371316660efae96d",
+      "sha256": "27fafe95224fc9871b5e5317d64e2f8095c79037bad1056685bd262648452e19",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/SHA256SUMS_PROOF_INPUTS.txt"
+    },
+    {
+      "path": "core/anchor_angles15.json",
+      "bytes": 755,
+      "git_blob_sha1": "fc01b7fd45cd2b185134d585d6fdd48f090dc4b5",
+      "sha256": "73bb8e82726a56ff9663bf94141d2dfba6794231968f6ccf8b0177ea291c95b0",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/anchor_angles15.json"
+    },
+    {
+      "path": "core/anchor_isolation15.py",
+      "bytes": 4278,
+      "git_blob_sha1": "e076eb211af9a3de97837271ff7c8899d358ae9c",
+      "sha256": "69390de12d0d45f1ccd7b9076a5c05798858401aea7c76713474e2ec687212ea",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/anchor_isolation15.py"
+    },
+    {
+      "path": "core/anchor_isolation_certificate.json",
+      "bytes": 35621,
+      "git_blob_sha1": "dce67f0a54c3088ef454b5df8ba13c78b26b753d",
+      "sha256": "6c83000d850c2f6401bc731afbab21bedc67476783e498cf8613cd2fbbed0639",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/anchor_isolation_certificate.json"
+    },
+    {
+      "path": "core/candidate15_tree.json.gz",
+      "bytes": 997460,
+      "git_blob_sha1": "d25548ede8f1b8d07e377aad13f6dfe039574f67",
+      "sha256": "0ff43bc0aae1b50e4e14d340a3b55447418231d2da0514cefd6f780b61913251",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/candidate15_tree.json.gz"
+    },
+    {
+      "path": "core/candidate_global15.py",
+      "bytes": 961,
+      "git_blob_sha1": "f2524b7d9713a940f49ec093ed78baaf863dcc8c",
+      "sha256": "4d1607b11f60d12d882d15ae4a0d9ab471ab4758ba24167d2a11663e156f417a",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/candidate_global15.py"
+    },
+    {
+      "path": "core/exact_arcs.py",
+      "bytes": 2462,
+      "git_blob_sha1": "830dc3fe17861a72068b1106ff129b0f143a7596",
+      "sha256": "879179a2cb7e23800b5c875b55c8e97b3e963e368915197bab938c7e5fda1f79",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/exact_arcs.py"
+    },
+    {
+      "path": "core/exact_force15.py",
+      "bytes": 2903,
+      "git_blob_sha1": "fab6c65dd6cc6a04ddbc3f0fdd8eaf2dccbe2728",
+      "sha256": "5a50fbd215444bed633caf61876d064c71d88b337664011c53780ec2baffe6c7",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/exact_force15.py"
+    },
+    {
+      "path": "core/interval15.py",
+      "bytes": 952,
+      "git_blob_sha1": "69a3c05112b1d02b42bb28aca8b1e5057fd85a42",
+      "sha256": "cc5c551d4b1d3bd3fd00ebf4d7ff3daf2d8cb53ff4ac1cb1c56109526850456e",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/interval15.py"
+    },
+    {
+      "path": "core/root15.json",
+      "bytes": 1823112,
+      "git_blob_sha1": "bf238b0fd350278bde088d8826e659ed226476d4",
+      "sha256": "36cbde7c21a005eb10ab60af5a975ca41e6b43af6f6c974943b4f0a03cac8a57",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/root15.json"
+    },
+    {
+      "path": "core/system15.py",
+      "bytes": 2536,
+      "git_blob_sha1": "1dcaee35ca8d42939f40a67fb564abdaecdb0345",
+      "sha256": "c98c528c2b66d5e25148944ac45545a3dda155b3cfcdd748d59adbe6059f8d49",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/system15.py"
+    },
+    {
+      "path": "core/test_fail_closed15.py",
+      "bytes": 5155,
+      "git_blob_sha1": "122ea21f4e54199401ba187775680dbab5e1eeff",
+      "sha256": "75724a6b031f66bc2de2fdccd4abd35fb15bd3576709328957bedbad0fabaf95",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/test_fail_closed15.py"
+    },
+    {
+      "path": "core/verify_forest15.py",
+      "bytes": 5597,
+      "git_blob_sha1": "eae02d74d505ef0f3a05d5be096f68527ce95ccf",
+      "sha256": "ad2815c7938d19b89d8a1a7d1cf11ce67f1d85bba16641704942cad0c6b37f3d",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/verify_forest15.py"
+    },
+    {
+      "path": "core/verify_partition15.py",
+      "bytes": 4048,
+      "git_blob_sha1": "3689f8020d00c741737828c4cea9d536f684aa4b",
+      "sha256": "c43a5fe93a6877d578421980c4253694ca63cd58832ed638e97100995f9d2858",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/verify_partition15.py"
+    },
+    {
+      "path": "core/verify_root15.py",
+      "bytes": 2446,
+      "git_blob_sha1": "61a127728cb908b13a5b9dc77d2808025ddfde54",
+      "sha256": "f838d0e48305166dca13507aa513f440f9c2abe09917551eb3c57d38571cf76f",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/verify_root15.py"
+    },
+    {
+      "path": "core/verify_upper15.py",
+      "bytes": 4513,
+      "git_blob_sha1": "0bd71cae64d5d8fd748d0ea88c882b52269e84e1",
+      "sha256": "9d5dd57abafc4cd606883318b915efe8ce9ce1424d850bd5e066e49a682e4fdd",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/core/verify_upper15.py"
+    },
+    {
+      "path": "enumeration/audit15.cpp",
+      "bytes": 6487,
+      "git_blob_sha1": "ada9b698f45d010b45d0f46658d2d6bbb66a8388",
+      "sha256": "be67fba1d3a8c7f9c6ed2d1263f72891d263c57fa69dd1f2a5b311d48a726435",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/audit15.cpp"
+    },
+    {
+      "path": "enumeration/candidate15_map.json",
+      "bytes": 1117,
+      "git_blob_sha1": "c9b6aad8d3fd382fdeffb9f1bcfdeaeba455df9d",
+      "sha256": "a35816597474c8e34d63a4add5d911196d1e87e1e46066815789bc385a5038b0",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/candidate15_map.json"
+    },
+    {
+      "path": "enumeration/enumerate15.cpp",
+      "bytes": 11901,
+      "git_blob_sha1": "064aef9eb1ae67017215c2ea4ba3a37ab9bd7cdb",
+      "sha256": "4ba15e38e70d09d4a97ec8806a405451dd053779ba75e2129f0550d6d689fecf",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/enumerate15.cpp"
+    },
+    {
+      "path": "enumeration/metric15_certificate.json",
+      "bytes": 2129126,
+      "git_blob_sha1": "2b316b106f399598132b7c507316796afa81010a",
+      "sha256": "5d0e0849f451d68324f0498d4234780ade4251bbd97e8f587161bf25bea7226e",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/metric15_certificate.json"
+    },
+    {
+      "path": "enumeration/metric15_residuals.json",
+      "bytes": 9504806,
+      "git_blob_sha1": "2fbfd65f6175faa9278a2274d8d06946d2862c8a",
+      "sha256": "44eb3a1e9f000ef1d83cbbc09f9302b728c797967b2c455b15f7c0a639901413",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/metric15_residuals.json"
+    },
+    {
+      "path": "enumeration/metric_audit15.cpp",
+      "bytes": 3667,
+      "git_blob_sha1": "a221d836bc38e08f7d6c4c7d07e9a6cf11d60e79",
+      "sha256": "2ee1fc895ec2902e072ef7df85e7c3233d11f7d186d455fc209cbfad80e13c48",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/metric_audit15.cpp"
+    },
+    {
+      "path": "enumeration/noncandidate15_B10.jsonl.gz",
+      "bytes": 15381062,
+      "git_blob_sha1": "c37352ea4822b275965f83d1253157a11e75f748",
+      "sha256": "251ae2a5e5ad1b3742f3ec09dd6e89df6da7c8b710b549bd502bbd4d2e8ac9a9",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/noncandidate15_B10.jsonl.gz"
+    },
+    {
+      "path": "enumeration/noncandidate15_B11.jsonl.gz",
+      "bytes": 25668922,
+      "git_blob_sha1": "45a75945f20e2fc83a02ca5c685cd08f477c3545",
+      "sha256": "57308268e19f20768a2297758e8a6950d32d5617b31c4a80989aa6c868520d2d",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/noncandidate15_B11.jsonl.gz"
+    },
+    {
+      "path": "enumeration/noncandidate15_B12.jsonl.gz",
+      "bytes": 21099527,
+      "git_blob_sha1": "3a3d1b2f98e1d942670f75ead508afe492bb591b",
+      "sha256": "e181ede9755dd114c92920ad20a5ad75e9bc08c317feda724f4ede6d678fee42",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/noncandidate15_B12.jsonl.gz"
+    },
+    {
+      "path": "enumeration/noncandidate15_B13.jsonl.gz",
+      "bytes": 9537010,
+      "git_blob_sha1": "dcb87a350a86589a81322abef0478a28eb214662",
+      "sha256": "8942a3093d704bf18fe9d79355cf0961340e396871c4117b21bf85a1800fe8b8",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/noncandidate15_B13.jsonl.gz"
+    },
+    {
+      "path": "enumeration/noncandidate15_B14.jsonl.gz",
+      "bytes": 1756584,
+      "git_blob_sha1": "e6d81d80b4f46b546e3595ceb70b9f14931de326",
+      "sha256": "c52659a8a1dedb2ccf5ae9b5a4b03714dda8e8559ca2cc0612bf7f3ccd8be947",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/enumeration/noncandidate15_B14.jsonl.gz"
+    },
+    {
+      "path": "verify_all.py",
+      "bytes": 8146,
+      "git_blob_sha1": "0131e87643067af835e9e6d0622473045778d64a",
+      "sha256": "8eb4b0652aa35695551ecb36e1f0181da0d108bd0a80286c679acca02141ff09",
+      "url": "https://raw.githubusercontent.com/VonEquinox/DiskCoveringSolve/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle/verify_all.py",
+      "source_path": "verify_all.py",
+      "source_sha256": "abaf7a82d8743b1177e4bd4ec97c211c9517b0de98a63a7e9abeb22b97de3caf",
+      "source_bytes": 7739
+    }
+  ],
+  "completed_utc": "2026-10-10T08:19:03.073246+00:00",
+  "scope": "complete primary acceptance code and inputs; excludes discovery and historical reports",
+  "historical_success_reports_used": false,
+  "documentation_layout": "Markdown 文档集中存放于项目 docs，source_* 字段保留上游原始记录；本地接受器仅调整文档读取路径。"
+}

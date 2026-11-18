@@ -1,0 +1,1 @@
+{"characteristic_zero":false,"degrees":[1436,1320],"extra_rational_radii":["9/16","2/5"],"normalization":"A=3 取已计算重数一层的首一半径截面","prime":998244353,"sha256":"941d6b779f866722cdb44b05531939aa4665d4cc79fd211856815b88084891b2","storage":"按方向变量升幂逐行，每行 1437 个小端 uint32，按 r 升幂","training_radii":1480,"universal_identity_proved":false,"variables":["r","A"],"withheld_radii":20}
