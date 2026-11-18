@@ -145,7 +145,7 @@ G=(U,\ H,\ Q,\ Q_{b_1},\ V_d,\ V_zU_e-V_eU_z)=0.
 \deg S&\le\deg_tG+(n-1)m,\\
 \|S\|_1&\le\|G\|_1\|P'\|_1^m\prod_j c_j^{m_j}
 \max\!\left(1,\frac{\|N_j\|_1}{c_j\|P'\|_1}\right)^{m_j},\\
-|\operatorname{Res}(P,S)|&\le\|P\|_1^{\deg S}\|S\|_1^n .
+|\mathrm{Res}(P,S)|&\le\|P\|_1^{\deg S}\|S\|_1^n .
 \end{aligned}
 ```
 
@@ -215,7 +215,7 @@ Y_\beta=(\beta,x_1(\beta),\ldots,x_5(\beta)).
 
 ```math
 2^{1122055293}\ \le\ M,\qquad
-|\operatorname{Res}(P,S_i)|\ \le\ 2^{1120516517}\ <\ M.
+|\mathrm{Res}(P,S_i)|\ \le\ 2^{1120516517}\ <\ M.
 ```
 
 因此六个结式逐一等于零。由 P 不可约，P 在 ℚ[X] 中整除每个 Sᵢ。在 β 处回代，所清除的分母均非零，于是 G(Yβ)=0。有限次模运算在这里推出的是有理数域上的整除关系，足以在 β 处精确求值。
