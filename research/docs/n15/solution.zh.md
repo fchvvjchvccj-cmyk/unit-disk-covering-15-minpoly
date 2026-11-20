@@ -33,13 +33,30 @@ $$
 
 ## 复核与来源
 
-从仓库根目录运行下列命令，将核验结果写入一个新的目录。复核器重新运行全局证明、不可约性、实根隔离、整数恒等式和实根连接，并将导出的整数列表、圆心与协议指纹逐字节比对。
+### 公开资料核对
+
+从公开仓库可直接查看[完整证明](../../../PROOF.zh.md)、[整数系数](../../n15/solution/coefficients.json)、[有序圆心](../../n15/solution/ordered-centers.json)、[实根区间与协议指纹](../../n15/solution/solution.json)及[已保存的复核结果](../../n15/solution/replay-verified.json)。查看这些材料、核对系数和摘要，不等同于从头运行数学证明。
+
+[v1.0.0 发布页](https://github.com/fchvvjchvccj-cmyk/unit-disk-covering-15-minpoly/releases/tag/v1.0.0)上的自定义离线 ZIP 与 GitHub 自动生成的源码 ZIP 不同。完整离线 ZIP 的 SHA-256 为 `656f61628e2868b1e0003d92c5d716168127d3cd4d20c6da7387cf7d4d4996da`；解压后可按包内逐文件 SHA-256 清单核对内容。这些摘要用于核验文件完整性，不能替代数学重放。尚未在仅有该 ZIP 的环境中验证全量重放。
+
+### 全量重放：原研究环境
+
+以下命令记录原研究环境的复算方式，并非全新克隆即可运行的说明。若从公开仓库根目录开始，先进入 `research`，再检查原输入提交是否可用：
 
 ~~~powershell
-& scripts/serialized_compute.ps1 python -X utf8 -B n15/solution/verify.py --output-directory .tools/n15-solution-fresh
+Set-Location research
+git cat-file -t ecadc602d1f93c74d528d222dae24178ac255e6c
 ~~~
 
-使用完整的仓库 Git 历史，固定输入版本为 `ecadc602d1f93c74d528d222dae24178ac255e6c`。其中保存五份压缩枚举输入及上游程序的固定字节。重放器在临时目录展开并校验摘要。Windows 环境使用 Python 3.14.7、SymPy 1.14.0、mpmath 1.3.0、python-flint 0.9.0，以及仓库已有的 GCC、Boost、FLINT 和 GMP。整数验证器使用本机的 `.tools/msolve-paged/chain/ucrt64` 工具链。计算限制为 6 GB 内存和 50% CPU。[固定输入和编译器说明](../../n15/proofs/global-final/replay_archived_inputs.py) · [本次消元及环境记录](algebra/four-directions.md)
+只有检查返回 `commit` 且所需 Windows 工具链已经就绪时，再从 `research` 运行以下命令。输出目录必须尚未创建；若示例目录已存在，请换一个新目录。
+
+~~~powershell
+& .\scripts\serialized_compute.ps1 python -X utf8 -B n15/solution/verify.py --output-directory .tools/n15-solution-fresh
+~~~
+
+目前公开 GitHub 仓库无法解析上述固定提交。它包含五份压缩枚举输入与固定版本的上游程序；重放器从 Git 读取所需文件，在临时目录展开并校验摘要。因此，修正工作目录并不能补齐这些输入。
+
+原 Windows 环境使用 Python 3.14.7、SymPy 1.14.0、mpmath 1.3.0、python-flint 0.9.0，以及 GCC、Boost、FLINT 和 GMP。重放器核对固定编译器及 Boost 头文件摘要；整数验证器使用本机的 `.tools/msolve-paged/chain/ucrt64` 工具链。原计算限制为 6 GB 内存和 50% CPU。完整复核会重跑全局证明、不可约性、实根隔离、整数恒等式及实根连接，并逐字节比对导出的整数列表、圆心与协议指纹。[固定输入和编译器说明](../../n15/proofs/global-final/replay_archived_inputs.py) · [本次消元及环境记录](algebra/four-directions.md)
 
 有序根数据、连续覆盖和组合全局下界沿用固定版本的公开证明。四方向代数约化、半径多项式重建、不可约性、根隔离及特征零连接在本次研究中完成。协议指纹按两个隔离端点分别运行官方脚本，两次舍入和哈希相同。[固定版上游证明包](https://github.com/VonEquinox/DiskCoveringSolve/tree/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle) · [交付清单与指纹](../../n15/solution/solution.json)
 
