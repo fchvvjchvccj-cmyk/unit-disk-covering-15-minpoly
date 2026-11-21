@@ -1,12 +1,12 @@
 # 接触链传递、端口分量与秩十六本原临界系统
 
-日期：2026-10-24，Asia/Shanghai。代码和正式证据位于 `n15/algebra/contact-transfer-20261024/`。
+日期：2026-10-24，Asia/Shanghai。代码和正式证据见[实验目录](../../../../n15/algebra/contact-transfer-20261024/)。
 
 本轮重新认证了从固定 Git 提交恢复的 25 元轴系统候选根，构造并认证了保留同一候选的八变量本原临界系统，完成两个素域参数线的精确比较。尚未取得半径单变量多项式，未证明新表示的整个复零集零维，也未重放原 148 元来源链、覆盖证明或全局下界。旧目录的成功字段没有作为本轮通过依据。
 
 ## 1. 输入、原根与证据范围
 
-`restore_inputs.py` 从 `ecadc60` 解析出的完整提交恢复五份输入到本轮 `inputs/`，保留原 Git blob、内容和存储 SHA256。旧实验目录和用户已有删除不变。恢复的轴系统有 14 个几何变量和 11 个乘子；接受器独立逐项核对 14 条驻定行确为实际约束的拉格朗日导数，再用原有理预条件矩阵和 512 位整数向外舍入区间重做严格自映、压缩。
+[输入恢复脚本](../../../../n15/algebra/contact-transfer-20261024/restore_inputs.py)从 `ecadc60` 解析出的完整提交恢复五份输入到本轮 `inputs/`，保留原 Git blob、内容和存储 SHA256。旧实验目录和用户已有删除不变。恢复的轴系统有 14 个几何变量和 11 个乘子；接受器独立逐项核对 14 条驻定行确为实际约束的拉格朗日导数，再用原有理预条件矩阵和 512 位整数向外舍入区间重做严格自映、压缩。
 
 因此本轮原目标指该轴系统原有理盒内唯一的根。将它连接到更早的 148 元系统和完整原题证明仍需相应来源链；本轮不以历史报告替代这一步。
 
@@ -70,7 +70,7 @@ C_2&=-p_x^2+4p_xu-4p_xx\\
 \end{aligned}
 ```
 
-`identities.py` 直接读取原轴系统的 `H10` 整数系数，以 `r^2=(px-u)^2+py^2` 代换，再对 `circle` 作一元多项式除法，逐项核验
+[恒等式核验脚本](../../../../n15/algebra/contact-transfer-20261024/identities.py)直接读取原轴系统的 `H10` 整数系数，以 `r^2=(px-u)^2+py^2` 代换，再对 `circle` 作一元多项式除法，逐项核验
 
 ```math
 \boxed{H_{10}=Q\,\mathrm{circle}+2GC_1C_2.}
@@ -301,9 +301,9 @@ N_{\rm old}=\mathrm{Norm}_{16}(f)^2N_{\rm primitive}.
 
 后续优先保留本轮秩十六本原载体，在同一有限代数中处理共同临界理想和图表单位，研究结构化消元或几何分解。四参数本原范数保留为独立交叉核对。将当前局部公式直接延长为固定系数 Möbius 整链闭合的路线已被实际接触结构排除；整数关系搜索和通用 F4 长算没有在本轮启动。
 
-正式证据为 `results/verified-final.json`、`target-final-certificate.json.gz`、两个 `exact65521/exact65537` 比较组、`comparison-final.json`、`checks.json`。`manifest.json` 绑定实际输入、代码、依赖和本文。工作区已有 Python 3.14、SymPy 1.14 和本地 python-flint 0.9.0；`context.py` 加入已配置的本地库路径。
+正式证据包括[验证报告](../../../../n15/algebra/contact-transfer-20261024/results/verified-final.json)、[目标证书](../../../../n15/algebra/contact-transfer-20261024/results/target-final-certificate.json.gz)、两组有限域结果及[精确比较](../../../../n15/algebra/contact-transfer-20261024/results/comparison-final.json)，以及[拒绝检查](../../../../n15/algebra/contact-transfer-20261024/results/checks.json)。[封存清单](../../../../n15/algebra/contact-transfer-20261024/manifest.json)绑定实际输入、代码、依赖和[发布时的原始文稿](https://github.com/fchvvjchvccj-cmyk/unit-disk-covering-15-minpoly/blob/v1.0.0/research/docs/n15/algebra/contact-transfer-20261024/proof.zh.md)。工作区已有 Python 3.14、SymPy 1.14 和本地 python-flint 0.9.0；`context.py` 加入已配置的本地库路径。
 
-从仓库根目录运行以下命令即可重放封存结果，输出名应尚不存在：
+在原研究环境的仓库根目录运行以下命令，可重放封存结果。重放会核对清单所列文件的原始字节，输出文件须使用新名称。
 
 ```powershell
 python -B n15/algebra/contact-transfer-20261024/replay.py --output replay-next.json

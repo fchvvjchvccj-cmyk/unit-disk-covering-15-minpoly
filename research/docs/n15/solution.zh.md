@@ -24,7 +24,7 @@ c_{i+1}=(\xi_{20+2i},\xi_{21+2i}),\qquad 0\le i<15.
 
 ## 连续覆盖与全局最优性
 
-对于上述构型，39 个有向三角形拼成以 11 个边界接点为顶点的拓扑圆盘，绕数检验给出内部的覆盖；逐面用公共点和双圆三角形引理验证。外侧余下的 11 个圆弓通过弧段引理验证，合起来覆盖整个闭单位盘。因此 $`R_D(C_*)\le\alpha`$。[覆盖证明及引理](proofs/global-final/source/PROOF-reading.zh.md) · [覆盖核验程序](../../n15/proofs/global-final/replay/core/verify_upper15.py)
+对于上述构型，39 个有向三角形拼成以 11 个边界接点为顶点的拓扑圆盘，绕数检验给出内部的覆盖；逐面用公共点和双圆三角形引理验证。外侧余下的 11 个圆弓通过弧段引理验证，合起来覆盖整个闭单位盘。因此 $`R_D(C_*)\le\alpha`$。[覆盖证明及引理](proofs/global-final/source/PROOF_zh.md#3-上界39个三角形和11个圆弓覆盖单位圆盘) · [覆盖核验程序](../../n15/proofs/global-final/replay/core/verify_upper15.py)
 
 若存在半径严格小于 $`\alpha`$ 的覆盖，正松量允许一般位置扰动。取极小子覆盖后，Voronoi 对偶归约把反例送入五族辅助杆图，此归约处理重合圆心、冗余圆盘及退化情形。独立组合计数以轨道质量和根面递推验证了五族的完备性。在 11,950,884 个组合类型中，度量不等式排除 11,907,870 个。剩余的 43,013 个非候选类型和一个候选类型经过穷尽分支核验，未决叶节点为零。于是对任意 $`C\in(\mathbb R^2)^{15}`$ 均有 $`R_D(C)\ge\alpha`$，从而 $`R_D(C_*)=r_D(15)=\alpha`$。[反例归约](proofs/global-final/reduction.zh.md) · [全局下界证明](proofs/global-final/global-proof.zh.md) · [完整重放结果](../../n15/proofs/global-final/master-20261118.json)
 
