@@ -48,13 +48,15 @@ J&=l(m_x+n_x-z n_y e)\\
 ```math
 \begin{aligned}
 M&=w_x^2-zw_y^2+1,\\
-N(h)&=M-2w_x+4zw_yh-z(M+2w_x)h^2,
+N(h)&=M-2w_x+4zw_yh\\
+&\quad{}-z(M+2w_x)h^2,
 \end{aligned}
 ```
 
 ```math
 \begin{aligned}
-J_0&=(1+zlv)w_x-z(l+v)w_y+zlv-1,\\
+J_0&=(1+zlv)w_x-z(l+v)w_y\\
+&\quad{}+zlv-1,\\
 H&=N(l)N(v)-4t^2J_0^2.
 \end{aligned}
 ```

@@ -160,7 +160,8 @@ m_x&=\kappa+t^2Tx_C,\\
 n_x&=-t(T+\kappa x_B),\\
 n_y&=t\kappa y_B,\\
 K&=t^2T(zle-1),\\
-J&=l(m_x+n_x-zn_ye)-n_y-(m_x-n_x)e.
+J&=l(m_x+n_x-zn_ye)\\
+&\quad{}-n_y-(m_x-n_x)e.
 \end{aligned}
 ```
 
@@ -172,7 +173,8 @@ v&=t y_D/(1+t x_D),\\
 w_x&=1+t(2x_D-1+x_A),\\
 w_y&=t y_A,\\
 M&=w_x^2-zw_y^2+1,\\
-N(h)&=M-2w_x+4zw_yh-z(M+2w_x)h^2,\\
+N(h)&=M-2w_x+4zw_yh\\
+&\quad{}-z(M+2w_x)h^2,\\
 J_0&=(1+zlv)w_x-z(l+v)w_y+zlv-1,\\
 H&=N(l)N(v)-4t^2J_0^2.
 \end{aligned}
@@ -192,7 +194,8 @@ H&=N(l)N(v)-4t^2J_0^2.
 \begin{aligned}
 \deg S&\le\deg_tG+(n-1)m,\\
 \|S\|_1&\le\|G\|_1\|P'\|_1^m\\
-&\quad{}\cdot\prod_j c_j^{m_j}\max\!\left(1,\frac{\|N_j\|_1}{c_j\|P'\|_1}\right)^{m_j},\\
+&\quad{}\cdot\prod_j\biggl[c_j^{m_j}\\
+&\quad{}\cdot\max\!\left(1,\frac{\|N_j\|_1}{c_j\|P'\|_1}\right)^{m_j}\biggr],\\
 |\mathrm{Res}(P,S)|&\le\|P\|_1^{\deg S}\|S\|_1^n.
 \end{aligned}
 ```
