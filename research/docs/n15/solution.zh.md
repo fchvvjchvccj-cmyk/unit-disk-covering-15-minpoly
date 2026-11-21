@@ -1,6 +1,6 @@
 # 用 15 个等半径闭圆盘覆盖单位闭圆盘
 
-设 $P(t)=\sum_{j=0}^{2869}a_jt^j$。[系数文件](../../n15/solution/coefficients.json)逐项列出 $a_0,a_1,\ldots,a_{2869}$，每行一个十进制整数。最优半径是 $P$ 在下列有理开区间中的唯一实根 $\alpha$：
+设 $`P(t)=\sum_{j=0}^{2869}a_jt^j`$。[系数文件](../../n15/solution/coefficients.json)逐项列出 $`a_0,a_1,\ldots,a_{2869}`$，每行一个十进制整数。最优半径是 $`P`$ 在下列有理开区间中的唯一实根 $`\alpha`$：
 
 ```math
 \left(
@@ -11,13 +11,13 @@
 
 ## 最小多项式与构型的连接
 
-$P$ 本原且首项为正。五个良素数上各自分解后，逐个验证模因子的不可约性并回乘，所有可能有理因子次数的交集为 $\{0,2869\}$。$P$ 在左端为正、右端为负，其导数在整段严格为负。以上两项分别证明有理不可约性和单变量根隔离。[全部模因子与根数检查](../../n15/algebra/four-directions/integer-candidate-check.json)
+$`P`$ 本原且首项为正。五个良素数上各自分解后，逐个验证模因子的不可约性并回乘，所有可能有理因子次数的交集为 $`\{0,2869\}`$。$`P`$ 在左端为正、右端为负，其导数在整段严格为负。以上两项分别证明有理不可约性和单变量根隔离。[全部模因子与根数检查](../../n15/algebra/four-directions/integer-candidate-check.json)
 
-原构型在实半角坐标 $(t,e,z,d,l,b_1)$ 中满足六个整数方程。原构型的像严格落入给定的有理盒，盒上通过了严格自映和压缩检验。另一方面，把 $P$ 的指定实根代入五个明确的有理函数，也得到该盒内的一点。对各函数清分母后，用整数特化和结式的整数上界证明六个余式全部被 $P$ 整除。这一步证明该点精确满足六式。盒中只有一个根，故它的半径坐标 $\alpha$ 就是原构型的半径。[六式的推导与结式证明](algebra/radius-identity.md) · [恒等式计算](../../n15/algebra/four-directions/integer-identity.json.gz) · [实根与源根的连接](../../n15/algebra/four-directions/radius-binding.json)
+原构型在实半角坐标 $`(t,e,z,d,l,b_1)`$ 中满足六个整数方程。原构型的像严格落入给定的有理盒，盒上通过了严格自映和压缩检验。另一方面，把 $`P`$ 的指定实根代入五个明确的有理函数，也得到该盒内的一点。对各函数清分母后，用整数特化和结式的整数上界证明六个余式全部被 $`P`$ 整除。这一步证明该点精确满足六式。盒中只有一个根，故它的半径坐标 $`\alpha`$ 就是原构型的半径。[六式的推导与结式证明](algebra/radius-identity.md) · [恒等式计算](../../n15/algebra/four-directions/integer-identity.json.gz) · [实根与源根的连接](../../n15/algebra/four-directions/radius-binding.json)
 
 ## 十五个有序圆心
 
-令 $\xi$ 为[整数方程组](../../n15/proofs/global-final/replay/core/system15.py)在[有理盒](../../n15/proofs/global-final/replay/core/root15.json)中的唯一根。盒中心是逐项的 `xnum/Qx`，每一维半宽 $10^{-80}$。从零编号，$\xi_{76}=\alpha^2$。所交付构型依次为
+令 $`\xi`$ 为[整数方程组](../../n15/proofs/global-final/replay/core/system15.py)在[有理盒](../../n15/proofs/global-final/replay/core/root15.json)中的唯一根。盒中心是逐项的 `xnum/Qx`，每一维半宽 $`10^{-80}`$。从零编号，$`\xi_{76}=\alpha^2`$。所交付构型依次为
 
 ```math
 c_{i+1}=(\xi_{20+2i},\xi_{21+2i}),\qquad 0\le i<15.
@@ -27,9 +27,9 @@ c_{i+1}=(\xi_{20+2i},\xi_{21+2i}),\qquad 0\le i<15.
 
 ## 连续覆盖与全局最优性
 
-对于上述构型，39 个有向三角形拼成以 11 个边界接点为顶点的拓扑圆盘，绕数检验给出内部的覆盖；逐面用公共点和双圆三角形引理验证。外侧余下的 11 个圆弓通过弧段引理验证，合起来覆盖整个闭单位盘。因此 $R_D(C_*)\le\alpha$。[覆盖证明及引理](proofs/global-final/source/PROOF-reading.zh.md) · [覆盖核验程序](../../n15/proofs/global-final/replay/core/verify_upper15.py)
+对于上述构型，39 个有向三角形拼成以 11 个边界接点为顶点的拓扑圆盘，绕数检验给出内部的覆盖；逐面用公共点和双圆三角形引理验证。外侧余下的 11 个圆弓通过弧段引理验证，合起来覆盖整个闭单位盘。因此 $`R_D(C_*)\le\alpha`$。[覆盖证明及引理](proofs/global-final/source/PROOF-reading.zh.md) · [覆盖核验程序](../../n15/proofs/global-final/replay/core/verify_upper15.py)
 
-若存在半径严格小于 $\alpha$ 的覆盖，正松量允许一般位置扰动。取极小子覆盖后，Voronoi 对偶归约把反例送入五族辅助杆图，此归约处理重合圆心、冗余圆盘及退化情形。独立组合计数以轨道质量和根面递推验证了五族的完备性。在 11,950,884 个组合类型中，度量不等式排除 11,907,870 个。剩余的 43,013 个非候选类型和一个候选类型经过穷尽分支核验，未决叶节点为零。于是对任意 $C\in(\mathbb R^2)^{15}$ 均有 $R_D(C)\ge\alpha$，从而 $R_D(C_*)=r_D(15)=\alpha$。[反例归约](proofs/global-final/reduction.zh.md) · [全局下界证明](proofs/global-final/global-proof.zh.md) · [完整重放结果](../../n15/proofs/global-final/master-20261118.json)
+若存在半径严格小于 $`\alpha`$ 的覆盖，正松量允许一般位置扰动。取极小子覆盖后，Voronoi 对偶归约把反例送入五族辅助杆图，此归约处理重合圆心、冗余圆盘及退化情形。独立组合计数以轨道质量和根面递推验证了五族的完备性。在 11,950,884 个组合类型中，度量不等式排除 11,907,870 个。剩余的 43,013 个非候选类型和一个候选类型经过穷尽分支核验，未决叶节点为零。于是对任意 $`C\in(\mathbb R^2)^{15}`$ 均有 $`R_D(C)\ge\alpha`$，从而 $`R_D(C_*)=r_D(15)=\alpha`$。[反例归约](proofs/global-final/reduction.zh.md) · [全局下界证明](proofs/global-final/global-proof.zh.md) · [完整重放结果](../../n15/proofs/global-final/master-20261118.json)
 
 ## 复核与来源
 
