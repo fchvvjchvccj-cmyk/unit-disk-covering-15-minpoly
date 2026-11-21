@@ -25,9 +25,12 @@
 对一个 DUAL 叶，给每条定向杆 e=uv 有理力 f_e，自由节点净力为零，锚点净力为 F_i=λ_i a_i−d_i、λ_i≥0，固定锚点净力为其它之负和。整盒半平面 a_i·q_i≥b_i 与散度恒等式给出
 
 ```math
-\sum_{i>0}[\lambda_i(b_i-a_{ix})-(|d_i|-d_{ix})]
-\le\sum_e f_e\cdot(z_u-z_v)
-\le\rho\sum_e|f_e|.
+\begin{aligned}
+\sum_{i>0}\bigl[\lambda_i(b_i-a_{ix})\\
+&\qquad{}-(|d_i|-d_{ix})\bigr]\\
+&\le\sum_e f_e\cdot(z_u-z_v)\\
+&\le\rho\sum_e|f_e|.
+\end{aligned}
 ```
 
 接受器向下界定左端、向上界定正范数和，全部使用整数或 Fraction。只有二者比值严格大于 U>α 时才排除。不存在“只检查盒中心”的接受规则，也不依赖发现力向量的浮点优化器是否收敛。重合自由节点同样满足恒等式。
@@ -51,8 +54,10 @@ d^TMd\le0,\qquad d^TA_*^TWA_*d\le2\nu^2a^4.
 若整盒锚点距离 a≤13/100，则
 
 ```math
-d^THd\le600\nu^2a^4-\frac9{5000}a^2\le0,
-\qquad \frac9{5000}-600\nu^2(13/100)^2=\frac{69}{320000}>0.
+\begin{gathered}
+d^THd\le600\nu^2a^4-\frac9{5000}a^2\le0,\\
+\frac9{5000}-600\nu^2(13/100)^2=\frac{69}{320000}>0.
+\end{gathered}
 ```
 
 与 H 正定相矛盾，除非 d=0。因此局部叶中的活跃图必须等于候选，不要求自由圆心或公共点预先接近候选。候选中活跃杆的长度恰为 α，不可能全部≤ρ<α。LOCAL 接受器用精确三角区间与根盒界定每个整弧的距离最大值，证明整个角盒 a<13/100；没有从局部根唯一性偷换为整个连续候选域唯一性。

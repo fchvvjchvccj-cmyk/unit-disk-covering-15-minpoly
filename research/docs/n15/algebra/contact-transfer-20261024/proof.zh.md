@@ -15,9 +15,11 @@
 记 `a=c2`、`c=c3`、`b=c12`，`kappa=1-r^2`。两个相邻活跃面的公共点记为 `p,p'`，相邻边界接触点记为 `q,q'`。在目标非退化方向上，互补交点满足
 
 ```math
-q+p=a+c,\qquad
-q+q'=\frac{|c|^2+\kappa}{|c|^2}c,\qquad
+\begin{gathered}
+q+p=a+c,\\
+q+q'=\frac{|c|^2+\kappa}{|c|^2}c,\\
 p+p'=c+b.
+\end{gathered}
 ```
 
 于是后一个圆心满足
@@ -31,13 +33,16 @@ p+p'=c+b.
 更关键的是原面表中 `(2,3,12)`、`(3,4,12)` 活跃，下一面 `(4,5,12)` 不活跃。令
 
 ```math
-T(A,B,C)=|A-B|^2|B-C|^2|C-A|^2-4r^2[B-A,C-A]^2.
+\begin{aligned}
+T(A,B,C)&=|A-B|^2|B-C|^2|C-A|^2\\
+&\quad{}-4r^2[B-A,C-A]^2.
+\end{aligned}
 ```
 
 本轮整盒有理区间证明
 
 ```math
--0.001042<T(c_4,c_5,c_{12})<-0.001041.
+-0.001042\lt T(c_4,c_5,c_{12})<-0.001041.
 ```
 
 错误地继续传递得到的圆心与实际 `c5` 的距离平方严格位于 `(0.000544,0.000545)`。因此把下一面补成等式会丢掉原目标。本轮将这条延长路线排除，保留有效的局部有理传递。
@@ -59,7 +64,10 @@ C_1=p_xu-p_xx-p_yy-u^2+ux,
 ```
 
 ```math
-C_2=-p_x^2+4p_xu-4p_xx-p_y^2-2u^2+2ux+1.
+\begin{aligned}
+C_2&=-p_x^2+4p_xu-4p_xx\\
+&\quad{}-p_y^2-2u^2+2ux+1.
+\end{aligned}
 ```
 
 `identities.py` 直接读取原轴系统的 `H10` 整数系数，以 `r^2=(px-u)^2+py^2` 代换，再对 `circle` 作一元多项式除法，逐项核验
@@ -73,11 +81,18 @@ C_2=-p_x^2+4p_xu-4p_xx-p_y^2-2u^2+2ux+1.
 右端令 `Z=2*c6x-1-r`、`c5=(d,e)`，`edge=(v-Z)^2+w^2`。定义两个整系数圆方程
 
 ```math
-C_+=w[d^2+e^2-(Z+2v-u)d+Z(2v-u)]-[w^2-(v-Z)(v-u)]e,
+\begin{aligned}
+C_+&=w[d^2+e^2-(Z+2v-u)d\\
+&\qquad{}+Z(2v-u)]\\
+&\quad{}-[w^2-(v-Z)(v-u)]e,
+\end{aligned}
 ```
 
 ```math
-C_-=w[d^2+e^2-(Z+u)d+Zu]-[w^2+(v-Z)(v-u)]e.
+\begin{aligned}
+C_-&=w[d^2+e^2-(Z+u)d+Zu]\\
+&\quad{}-[w^2+(v-Z)(v-u)]e.
+\end{aligned}
 ```
 
 原轴第九行是 `H9=((u-v)^2+w^2)*edge-4*r^2*w^2`。独立整数展开证明
@@ -99,16 +114,22 @@ aa^2+bb^2=4r^2,\qquad dx\,aa+w\,bb=L.
 令 `t=dx*bb-w*aa`。通用整数恒等式给出
 
 ```math
-t^2=L(4r^2-L),\qquad
-aa=dx-\frac{wt}{L},\qquad bb=w+\frac{dx\,t}{L}.
+\begin{gathered}
+t^2=L(4r^2-L),\\
+aa=dx-\frac{wt}{L},\\
+bb=w+\frac{dx\,t}{L}.
+\end{gathered}
 ```
 
 这避免以半角参数引入 `1+s^2` 分母。另一个恒等式为
 
 ```math
-L(dx-aa)^2-w^2(4r^2-L)
-=w^2(aa^2+bb^2-4r^2)
- +(dx\,aa+w\,bb-L)(dx\,aa-w\,bb-L).
+\begin{aligned}
+&L(dx-aa)^2-w^2(4r^2-L)\\
+&\quad{}=w^2(aa^2+bb^2-4r^2)\\
+&\qquad{}+(dx\,aa+w\,bb-L)\\
+&\qquad\quad{}\cdot(dx\,aa-w\,bb-L).
+\end{aligned}
 ```
 
 结合原 `H9`，右端二次根精确分为 `R-(dx-aa)` 和 `R+(dx-aa)`，其中 `R=2*c6x-1-r-v`。原盒中后一因子位于 `(0.688,0.689)`，故
@@ -134,15 +155,24 @@ g_0=t^2-L(4r^2-L)=0,
 ```
 
 ```math
-p_x=u+aa/2,\quad p_y=bb/2,\qquad g_1=z^2+p_y^2-1=0,
+\begin{gathered}
+p_x=u+aa/2,\quad p_y=bb/2,\\
+g_1=z^2+p_y^2-1=0,
+\end{gathered}
 ```
 
 ```math
-a_x=(p_x+z)/2,\qquad g_2=(h-p_y)^2+(a_x-p_x)^2-r^2=0,
+\begin{gathered}
+a_x=(p_x+z)/2,\\
+g_2=(h-p_y)^2+(a_x-p_x)^2-r^2=0,
+\end{gathered}
 ```
 
 ```math
-x_6=(1+r+v+dx-aa)/2,\qquad g_3=(x_6-1)^2+y^2-r^2=0.
+\begin{gathered}
+x_6=(1+r+v+dx-aa)/2,\\
+g_3=(x_6-1)^2+y^2-r^2=0.
+\end{gathered}
 ```
 
 四条关系在参数环 `Q[u,v,w,r,1/(2L)]` 上逐层首一二次，因此它们本身定义秩 `2^4=16` 的有限自由载体。后续电路还需局部化载体中的其他元素；不由目标处非零推断这些元素在整个参数纤维均为单位，也不宣称局部化后自动保持自由秩十六。此处的秩不是临界点总数或半径代数次数。
@@ -150,8 +180,10 @@ x_6=(1+r+v+dx-aa)/2,\qquad g_3=(x_6-1)^2+y^2-r^2=0.
 以 `a=(ax,h)` 重建
 
 ```math
-c_3=\left(v+\frac{(|a|^2+1-r^2)a_x}{|a|^2}-z-p_x,
-          w+\frac{(|a|^2+1-r^2)h}{|a|^2}-2p_y\right),
+\begin{aligned}
+c_3=\biggl(&v+\frac{(|a|^2+1-r^2)a_x}{|a|^2}-z-p_x,\\
+&w+\frac{(|a|^2+1-r^2)h}{|a|^2}-2p_y\biggr),
+\end{aligned}
 ```
 
 ```math
@@ -165,21 +197,31 @@ a_c=2-4x_6^2/Sx,\quad e_c=-4x_6y/Sx,
 ```
 
 ```math
-b_c=-(Z+2v-u),\quad b_e=-[w^2-(v-Z)(v-u)]/w,\quad b_0=Z(2v-u).
+\begin{aligned}
+b_c&=-(Z+2v-u),\\
+b_e&=-[w^2-(v-Z)(v-u)]/w,\\
+b_0&=Z(2v-u).
+\end{aligned}
 ```
 
 两圆相减给出
 
 ```math
-e=e_0+e_1d,\qquad
-e_0=-(b_0+\beta)/(b_e-e_c),\quad e_1=-(b_c-a_c)/(b_e-e_c).
+\begin{aligned}
+e&=e_0+e_1d,\\
+e_0&=-(b_0+\beta)/(b_e-e_c),\\
+e_1&=-(b_c-a_c)/(b_e-e_c).
+\end{aligned}
 ```
 
 代回第一圆得 `g=A*d^2+B*d+C=0`，其中
 
 ```math
-A=1+e_1^2,\quad B=2e_0e_1+a_c+e_ce_1,\quad
-C=e_0^2+e_ce_0-\beta.
+\begin{aligned}
+A&=1+e_1^2,\\
+B&=2e_0e_1+a_c+e_ce_1,\\
+C&=e_0^2+e_ce_0-\beta.
+\end{aligned}
 ```
 
 最后的边界闭环记为 `H=B(c4,c5;r)`。项目已有的本原因式分解，在单位圆公共点 `q` 及其圆方程上给出 `H=f*Q`，其中
@@ -197,14 +239,19 @@ f=|c_4|^2+1-r^2-2c_4\cdot q.
 `model.py` 完整列明 `J0,J1` 的有理电路。`A,J1,2Ad+B,f` 在目标处均为单位，故 `d=-J0/J1` 唯一恢复原点。在共同零集上，独立微分恒等式给出
 
 ```math
-dF=-J_1(2Ad+B)dQ
-   =-\frac{J_1(2Ad+B)}f\,dH.
+\begin{aligned}
+dF&=-J_1(2Ad+B)dQ\\
+&=-\frac{J_1(2Ad+B)}f\,dH.
+\end{aligned}
 ```
 
 因此半径临界性精确保留。四层载体上按隐函数规则取全导数，最终八式为
 
 ```math
-\boxed{g_0=g_1=g_2=g_3=F=\delta_uF=\delta_vF=\delta_wF=0.}
+\boxed{\begin{gathered}
+g_0=g_1=g_2=g_3=F=0,\\
+\delta_uF=\delta_vF=\delta_wF=0.
+\end{gathered}}
 ```
 
 目标使用 `r>0`、全部电路分母非零、四个二次根简单，以及 `A,J1,2Ad+B,f,delta_rF` 非零的图表。有限域中的对应条件是非零条件，不使用实数方向符号删根。
@@ -217,7 +264,7 @@ dF=-J_1(2Ad+B)dQ
 
 只计算实际输出依赖闭包，包含闭环的全部四个参数全导数：
 
-| 表示 | 变量 | 闭环前载体秩 | 闭环门数 | 闭环及四导数门数 |
+| 表示 | 变量 | 闭环前秩 | 闭环门数 | 含四导数 |
 |---|---:|---:|---:|---:|
 | 旧 `closure-descent` | 8 | 16 | 192 | 1,278 |
 | 本轮本原有限载体 | 8 | 16 | 180 | 1,154 |

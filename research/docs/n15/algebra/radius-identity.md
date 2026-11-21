@@ -13,20 +13,32 @@
 使用[四方向推导](four-directions.md)中的单位复方向 $`A,B,C,D`$，源接点 $`E`$、左端 $`L`$ 和右端 $`V`$。置 $`s=(A-1)/(A+1)`$，$`z=s^2`$。对于每个单位量 $`Y`$ 写
 
 ```math
-h_Y=\frac{Y-1}{s(Y+1)},\qquad
-Y=x_Y+s y_Y,\qquad (x_Y,y_Y)=\left(\frac{1+zh_Y^2}{1-zh_Y^2},\frac{2h_Y}{1-zh_Y^2}\right).
+\begin{gathered}
+h_Y=\frac{Y-1}{s(Y+1)},\\
+Y=x_Y+s y_Y,\\
+(x_Y,y_Y)=\left(\frac{1+zh_Y^2}{1-zh_Y^2},\frac{2h_Y}{1-zh_Y^2}\right).
+\end{gathered}
 ```
 
 目标处 $`s`$ 纯虚，$`z<0`$。$`h_A=1`$。以下依次记 $`h_E=e,h_D=d,h_L=l,h_B=b_1`$，其中 $`b_1`$ 与隔离区间右端点无关。半径写作 $`t`$。虚部等式 $`y_E=t y_A`$ 给出 $`U=t(1-ze^2)-e(1-z)=0`$。设
 
 ```math
-T=ze y_A-x_A-(2x_D-1),\quad x_C=x_B+T/2,\quad \kappa=1-t^2.
+\begin{aligned}
+T&=ze y_A-x_A-(2x_D-1),\\
+x_C&=x_B+T/2,\\
+\kappa&=1-t^2.
+\end{aligned}
 ```
 
 链的复分式线性矩阵的第一行是 $`m=\kappa+t^2 TC`$、$`n=-t(T+\kappa/B)`$，第二行是 $`\bar n,\bar m`$。设 $`m_x=\kappa+t^2 T x_C`$，$`n_x=-t(T+\kappa x_B)`$，$`n_y=t\kappa y_B`$。将它作用于 $`E`$ 并取半角坐标，得到
 
 ```math
-K y_C+J=0,\quad K=t^2T(zle-1),\quad J=l(m_x+n_x-z n_y e)-n_y-(m_x-n_x)e.
+\begin{aligned}
+K y_C+J&=0,\\
+K&=t^2T(zle-1),\\
+J&=l(m_x+n_x-z n_y e)\\
+&\quad{}-n_y-(m_x-n_x)e.
+\end{aligned}
 ```
 
 由 $`x_C^2-z y_C^2=1`$，可取 $`Q=(x_C^2-1)K^2-zJ^2`$。在 $`K\ne0`$ 的目标邻域，它与链有相同的选定分支。
@@ -34,11 +46,17 @@ K y_C+J=0,\quad K=t^2T(zle-1),\quad J=l(m_x+n_x-z n_y e)-n_y-(m_x-n_x)e.
 右端的半角 $`v=t y_D/(1+t x_D)`$。内接点 $`W=(w_x,w_y)`$ 取 $`w_x=1+t(2x_D-1+x_A), w_y=t y_A`$，第二坐标仍表示 $`s`$ 的系数。定义
 
 ```math
-M=w_x^2-zw_y^2+1,\quad N(h)=M-2w_x+4zw_yh-z(M+2w_x)h^2,
+\begin{aligned}
+M&=w_x^2-zw_y^2+1,\\
+N(h)&=M-2w_x+4zw_yh-z(M+2w_x)h^2,
+\end{aligned}
 ```
 
 ```math
-J_0=(1+zlv)w_x-z(l+v)w_y+zlv-1,\qquad H=N(l)N(v)-4t^2J_0^2.
+\begin{aligned}
+J_0&=(1+zlv)w_x-z(l+v)w_y+zlv-1,\\
+H&=N(l)N(v)-4t^2J_0^2.
+\end{aligned}
 ```
 
 连接 $`L,V`$ 的直线方程左端在 $`W`$ 的值为 $`J_0`$，其法向量的平方范数为 $`(1-zl^2)(1-zv^2)`$。又有 $`N(h)=(1-zh^2)|W-Y(h)|^2`$。由三点外接半径公式，$`H=0`$ 恰为原几何闭环。程序对 $`H,Q`$ 各乘已知分母和非零常数，直接构造 $`\mathbb Z[t,e,z,d,l,b_1]`$ 中的多项式；以下沿用 $`H,Q`$ 表示清分母后的式子。[整数公式](../../../n15/algebra/four-directions/scalar_incidence.py)
@@ -64,8 +82,10 @@ U,\quad H,\quad Q,\quad Q_{b_1},\quad V_d,\quad V_z U_e-V_e U_z.
 对上述任一整数式 $`G`$，设 $`m`$ 为五个坐标的合计次数界，$`m_j`$ 为各自次数界。把坐标代入，乘 $`(P')^m\prod c_j^{m_j}`$，得到整系数 $`S(t)`$。若 $`n=\deg P`$，则 $`\deg S\le\deg_t G+(n-1)m`$，且
 
 ```math
-\|S\|_1\le \|G\|_1\|P'\|_1^m\prod_j
-c_j^{m_j}\max\left(1,\frac{\|N_j\|_1}{c_j\|P'\|_1}\right)^{m_j}.
+\begin{aligned}
+\|S\|_1&\le \|G\|_1\|P'\|_1^m\\
+&\quad{}\cdot\prod_j c_j^{m_j}\max\left(1,\frac{\|N_j\|_1}{c_j\|P'\|_1}\right)^{m_j}.
+\end{aligned}
 ```
 
 此式按每个单项式使用三角不等式。程序对 $`U,H,Q`$ 展开统计次数及一范数，对乘积、和与偏导使用整数上界。Sylvester 矩阵的 Hadamard 界给出

@@ -2,13 +2,12 @@
 
 ## 已验证的半径
 
-2026-11-18 的完整重放得到
+2026-11-18 完成重放。
 
-```math
-0.318142930859262836359491181649935005186663866157651845538266
-<r_D(15)<
-0.318142930859262836359491181649935005186663866157651845538267 .
-```
+$`r_D(15)`$ 的严格十进制界限
+
+- 下界为 0.318142930859262836359491181649935005186663866157651845538266。
+- 上界为 0.318142930859262836359491181649935005186663866157651845538267。
 
 精确对象为既有 148 元整系数系统在指定有理盒中的唯一根 $`\xi`$。从零编号，$`r_D(15)=\sqrt{\xi_{76}}`$，第 $`i+1`$ 个圆心是 $`(\xi_{20+2i},\xi_{21+2i})`$，其中 $`0\le i<15`$。系统、根盒中心与预条件器实际列在 [system15.py](../../../n15/proofs/global-final/replay/core/system15.py) 和 [root15.json](../../../n15/proofs/global-final/replay/core/root15.json)。盒中心为文件中的 xnum/Qx，逐坐标半宽可取 $`10^{-80}`$。
 
@@ -18,12 +17,15 @@
 
 ## 用有理端点隔离半径的所有共轭根
 
-记 $`f`$ 为上述 148 元系统，$`q`$ 为 `root15.json` 中的精确盒中心。令 $`z_0=q`$，$`u_0=318142930859262836359491181649935005186663866157651845538266/10^{60}`$。下式的 768 次复合用有限次四则运算指定两个有理数。矩阵逆也可按伴随矩阵除以行列式理解。
+记 $`f`$ 为上述 148 元系统，$`q`$ 为 `root15.json` 中的精确盒中心。令 $`z_0=q`$，$`u_0`$ 为上述严格十进制下界。下式的 768 次复合用有限次四则运算指定两个有理数。矩阵逆也可按伴随矩阵除以行列式理解。
 
 ```math
-z_{j+1}=z_j-f'(z_j)^{-1} f(z_j),\qquad
-u_{j+1}=\frac{u_j^2+(z_{j+1})_{76}}{2u_j},\qquad
-(a,b)=\big(u_{768}-2^{-10^{223}},\ u_{768}+2^{-10^{223}}\big).
+\begin{aligned}
+z_{j+1}&=z_j-f'(z_j)^{-1}f(z_j),\\
+u_{j+1}&=\frac{u_j^2+(z_{j+1})_{76}}{2u_j},\\
+a&=u_{768}-2^{-10^{223}},\\
+b&=u_{768}+2^{-10^{223}}.
+\end{aligned}
 ```
 
 **根分离。** 给原系统加上 $`u^2-z_{76}=0`$，得到 $`n=149`$ 条整系数二次方程 $`f_i=0`$。原根非奇异且 $`u=\alpha>0`$，故增广根也非奇异。各式系数绝对值之和至多 1,024。取独立参数 $`v`$，考察 $`x_i^3=v f_i(x)`$。对任一次数相容单项式序，其首项两两互素并且首一，标准单项式为每个指数小于 3 的 $`d=3^{149}`$ 个单项式。也可逐一替换立方；不同坐标的替换在共同的乘积上可归并。用这组基表示乘以最后一个坐标 $`u`$ 的矩阵。各列起始单项式的总次至多 299，每次替换总次至少下降一。每个矩阵元素作为 $`v`$ 的整系数多项式，其系数绝对值之和至多 $`1024^{299}`$。
@@ -33,7 +35,10 @@ u_{j+1}=\frac{u_j^2+(z_{j+1})_{76}}{2u_j},\qquad
 设 $`P`$ 是 $`\alpha`$ 的本原最小多项式，则 $`P`$ 在整数环整除 $`L`$，其首项绝对值至多 $`H_0=2^{10^{76}}`$。它的每个根按 $`L`$ 的 Cauchy 界至多有模 $`1+H_0`$。若 $`P`$ 有两个不同根，取其间距 $`s`$，在非零整数判别式的根差乘积中单独保留这对。由
 
 ```math
-1\le |\mathrm{Disc}P|\le H_0^{2d-2}s^2[2(1+H_0)]^{d(d-1)-2}
+\begin{aligned}
+1\le|\mathrm{Disc}P|\\
+&\le H_0^{2d-2}s^2[2(1+H_0)]^{d(d-1)-2}
+\end{aligned}
 ```
 
 和 $`d<10^{72}`$ 得 $`s>2^{-10^{222}}`$。一次多项式自动满足所需隔离结论。
@@ -51,8 +56,12 @@ u_{j+1}-\alpha=\frac{(u_j-\alpha)^2+(z_{j+1})_{76}-\xi_{76}}{2u_j}.
 沿用[八变量系统](contact-transfer-20261024/proof.zh.md)的 $`u,v,w,P=(p_x,p_y),z,h,y,x_6,r`$。用 $`A,B,C,D`$ 表示以下四个单位向量，后文也把它们视为单位复数。此处 $`D`$ 表示方向变量。
 
 ```math
-rA=P-(u,0),\qquad rB=(v,w)-P,\qquad
-rC=((z-p_x)/2,h-p_y),\qquad rD=(x_6-1,y).
+\begin{aligned}
+rA&=P-(u,0),\\
+rB&=(v,w)-P,\\
+rC&=((z-p_x)/2,h-p_y),\\
+rD&=(x_6-1,y).
+\end{aligned}
 ```
 
 每个方向的独立实参数是 $`s=Y/(1+X)`$，逆为 $`(X,Y)=((1-s^2)/(1+s^2),2s/(1+s^2))`$。设 $`k=A_x+2C_x+2(D_x-B_x)-1`$。由 $`u=1+r(2D_x-2B_x-1)`$ 及 $`(z,p_y)=(1+rk,rA_y)`$ 在单位圆上得到
@@ -82,8 +91,12 @@ W=1+r(D+D^{-1}-1+A).
 用复代数坐标时，单位方向的共轭写成逆元，方程的系数属于 $`\mathbb Q`$。现在以 $`E,A,D`$ 为三个自由方向，设
 
 ```math
-r=\frac{E-E^{-1}}{A-A^{-1}},\quad
-T=\frac{E-1}{r}-A-D-D^{-1}+1=C+C^{-1}-B-B^{-1},\qquad U=1-r^2 .
+\begin{aligned}
+r&=\frac{E-E^{-1}}{A-A^{-1}},\\
+T&=\frac{E-1}{r}-A-D-D^{-1}+1\\
+ &=C+C^{-1}-B-B^{-1},\\
+U&=1-r^2.
+\end{aligned}
 ```
 
 固定 $`E,A`$ 即固定半径。三个分式线性映射的矩阵乘积为
@@ -95,13 +108,23 @@ T=\frac{E-1}{r}-A-D-D^{-1}+1=C+C^{-1}-B-B^{-1},\qquad U=1-r^2 .
 要求此矩阵把 $`E`$ 送到 $`\ell`$ 给出 $`aC+b/C+cB+d/B+k=0`$，其中
 
 ```math
-a=-r^2TE,\quad b=\ell r^2T,\quad c=-\ell rUE,\quad d=rU,\quad k=\ell(U-rTE)-UE+rT.
+\begin{aligned}
+a&=-r^2TE,\\
+b&=\ell r^2T,\\
+c&=-\ell rUE,\\
+d&=rU,\\
+k&=\ell(U-rTE)-UE+rT.
+\end{aligned}
 ```
 
 合并 $`C+C^{-1}=B+B^{-1}+T`$。记 $`x=b+c,\ y=b+d,\ z_0=a-b,\ w_0=k+bT`$，并令 $`p(X)=xX^2+w_0X+y`$。消去 $`C`$ 后得到
 
 ```math
-Q(X)=p(X)\big[p(X)+z_0(X^2+TX+1)\big]+z_0^2X^2,\qquad Q(B)=0.
+\begin{aligned}
+Q(X)&=p(X)\big[p(X)+z_0(X^2+TX+1)\big]\\
+&\quad{}+z_0^2X^2,\\
+Q(B)&=0.
+\end{aligned}
 ```
 
 这是从两条线性等式解出 $`C,C^{-1}`$，再将它们相乘等于 1 的结果。目标处 $`z_0\ne0`$。令 $`K=W-V,\ J=V\overline W-1`$。用 $`\bar\ell=1/\ell,\bar V=1/V`$ 代入三点外接半径公式并约去非零弦长，得到二次式
@@ -118,8 +141,9 @@ H(\ell)=(W-\ell)(\ell\overline W-1)KJ-r^2(K+\ell J)^2.
 \begin{aligned}
 &z_0^2,\\
 &Tw_0z_0+w_0^2-4xy-2(x+y)z_0+z_0^2,\\
-&T^2xy-Tw_0(x+y)+w_0^2+(x-y)^2-4xy-2(x+y)z_0,\\
-&(x-y)^2 .
+&T^2xy-Tw_0(x+y)+w_0^2+(x-y)^2\\
+&\qquad{}-4xy-2(x+y)z_0,\\
+&(x-y)^2.
 \end{aligned}
 ```
 
@@ -138,8 +162,10 @@ F(D)=D^{36}(D+r)^{16}R.
 为看清 $`H`$ 的两个根，设 $`d=D,\ U_0=1+r(A-1),\ U_1=1+r(A^{-1}-1)`$。直接相减得
 
 ```math
-K=\frac{(U_0+r^2-1)d^2+r(1+U_0)d+r^2}{d(d+r)},\quad
-J=\frac{d[r^2d^2+r(1+U_1)d+U_1+r^2-1]}{d+r}.
+\begin{aligned}
+K&=\frac{(U_0+r^2-1)d^2+r(1+U_0)d+r^2}{d(d+r)},\\
+J&=\frac{d[r^2d^2+r(1+U_1)d+U_1+r^2-1]}{d+r}.
+\end{aligned}
 ```
 
 当 $`d\to0`$，$`d^2H`$ 正则，极限是一条有限根与一条简单无穷根。后者满足 $`1/\ell=d/r+O(d^2)=-v/r+O(v^2)`$。当 $`d\to\infty`$，$`d^{-4}H`$ 正则，有一条简单根 $`\ell=1/(rd)+O(d^{-2})=-v/r+O(v^2)`$。这些由上式代入 $`H`$ 的常数项、一次项及二次项相除即得，均在通用系数域计算。两处各有一根使齐次判别式的极点阶数由 12 降到至多 8。由结式的齐次乘积公式，$`R`$ 在零处极点阶数至多 $`2\cdot8+12+8=36`$，在无穷处增长次数至多 $`4\cdot8+12+8=52`$。于是 $`F`$ 是次数至多 $`36+16+52=104`$ 的多项式。通用恒等式在清分母后可特化至目标。
@@ -155,8 +181,10 @@ J=\frac{d[r^2d^2+r(1+U_1)d+U_1+r^2-1]}{d+r}.
 写 $`x=r`$，只保留方向 $`A`$。辅助方向 $`E`$ 满足 $`E^2-x(A-A^{-1})E-1=0`$，另一根为 $`-1/E`$。将 $`F`$ 中的半径保留为独立变量 $`x`$，令
 
 ```math
-Z(x,A)=A^{14904}\mathrm{Norm}_{E}\!
- \left[\mathrm{Res}_D(x^{24}F,\partial_D(x^{24}F))\right].
+\begin{aligned}
+Z(x,A)&=A^{14904}\mathrm{Norm}_E\bigl[\\
+&\qquad{}\mathrm{Res}_D(x^{24}F,\partial_D(x^{24}F))\bigr].
+\end{aligned}
 ```
 
 这是整系数平面多项式。可先用 $`A^2D^2(D+x)^2H`$ 和 $`(xD)^{12}\Delta`$ 计算第一个结式，再约去 $`D^4`$ 及坐标单项式。固定 $`x`$ 时，$`H`$ 中 $`A`$ 的指数在 $`[-2,2]`$。$`\Delta`$ 对 $`T`$ 最高 12 次，显含 $`E`$ 至多 8 次。对 $`F`$ 的系数，$`A^iE^j`$ 满足 $`-16\le i\le40,\ 0\le j\le40,\ i+j\le56`$。$`x^{24}F`$ 对 $`x`$ 至多 120 次，因为清分母后的 $`H,\Delta`$ 对 $`x`$ 分别至多 6、36 次。再取一次 104 与 103 次的结式，将这些指数界乘以 207。
@@ -200,7 +228,9 @@ P(r,A,D)+wQ(r,A,D)=A^{48}r^{24}F(D).
 
 在 $`\mathbb F_{998244353}`$ 上计算四个完整截面。固定 $`x`$ 时，从报告中恢复 $`Z`$ 须再乘非零常数 $`x^{9936}`$。每个截面按上述次数界插值，另用八点校验，并用独立的单变量有理函数实现直接复核六组结式，再逐因子相乘。截面的平方自由分解在特化后进行。
 
-| 固定参数 | 变化量 | 完整截面次数 | 重数一层次数 | 该层与其导数的结式（模素数，首一化后） |
+最后一列是重数一层首一化后与其导数的模结式。
+
+| 特化 | 变量 | 截面次数 | 单重层次数 | 模结式 |
 |---|---|---:|---:|---:|
 | $`x=9/16`$ | $`A`$ | 20,888 | 1,320 | 907706728 |
 | $`x=2/5`$ | $`A`$ | 20,888 | 1,320 | 170316187 |
@@ -238,18 +268,32 @@ H=Q=Q_B=T_D=T_Er_A-T_A r_E=0.
 从仓库根目录运行以下命令。前两条命令使用固定 Git 归档，报告输出路径必须尚不存在。第三条命令重新计算八份代数报告并逐字段比较。
 
 ~~~powershell
-& scripts/serialized_compute.ps1 python -X utf8 -B n15/proofs/global-final/replay_archived_inputs.py --output global-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B n15/proofs/global-final/replay_archived_inputs.py --axis-chain --output axis-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B `
+    n15/proofs/global-final/replay_archived_inputs.py --output global-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B `
+    n15/proofs/global-final/replay_archived_inputs.py --axis-chain --output `
+    axis-fresh.json
 & scripts/serialized_compute.ps1 python -X utf8 -B n15/algebra/four-directions/replay.py
-& scripts/serialized_compute.ps1 python -X utf8 -B n15/algebra/four-directions/verify_carrier.py --rebuild --output carrier-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B n15/algebra/four-directions/conjugate_interval.py --output interval-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B `
+    n15/algebra/four-directions/verify_carrier.py --rebuild --output `
+    carrier-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B `
+    n15/algebra/four-directions/conjugate_interval.py --output interval-fresh.json
 $dir = 'n15/algebra/four-directions'
-& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/fit_plane.py" "$dir/plane-first.json" "$dir/plane-regular.json" --symmetric --training 1470 --output plane-fresh.bin.gz --report plane-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/project_mod_radius.py" --matrix plane-fresh.bin.gz --matrix-report plane-fresh.json --prefix radius-fresh --output radius-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/modular_fibers.py" --output fibers-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/lift_directions.py" --source fibers-fresh.json --output directions-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/recover_anchors.py" --source directions-fresh.json --output anchors-fresh.json
-& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/padic_radius.py" --source anchors-fresh.json --level 64 --workers 3 --output padic-fresh.json.gz
+& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/fit_plane.py" `
+    "$dir/plane-first.json" "$dir/plane-regular.json" --symmetric --training 1470 `
+    --output plane-fresh.bin.gz --report plane-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/project_mod_radius.py" `
+    --matrix plane-fresh.bin.gz --matrix-report plane-fresh.json --prefix `
+    radius-fresh --output radius-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/modular_fibers.py" `
+    --output fibers-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/lift_directions.py" `
+    --source fibers-fresh.json --output directions-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/recover_anchors.py" `
+    --source directions-fresh.json --output anchors-fresh.json
+& scripts/serialized_compute.ps1 python -X utf8 -B "$dir/padic_radius.py" --source `
+    anchors-fresh.json --level 64 --workers 3 --output padic-fresh.json.gz
 ~~~
 
 本轮使用本机 Intel Core i5-11400H、16 GiB DDR4，以及已有的 Python 3.14.7、SymPy 1.14.0、mpmath 1.3.0、python-flint 0.9.0、仓库内的 GCC、Boost 和 FLINT。计算作业限制为 6,000,000,000 字节与 50% CPU。全局数学核验主程序运行约 224 秒。此次工作沿用了公开证明代码、精确根数据和仓库既有代数约化，新增部分从四方向参数化开始。

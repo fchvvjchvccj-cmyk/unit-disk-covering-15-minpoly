@@ -1,12 +1,9 @@
 # 用 15 个等半径闭圆盘覆盖单位闭圆盘
 
-设 $`P(t)=\sum_{j=0}^{2869}a_jt^j`$。[系数文件](../../n15/solution/coefficients.json)逐项列出 $`a_0,a_1,\ldots,a_{2869}`$，每行一个十进制整数。最优半径是 $`P`$ 在下列有理开区间中的唯一实根 $`\alpha`$：
+设 $`P(t)=\sum_{j=0}^{2869}a_jt^j`$。[系数文件](../../n15/solution/coefficients.json)逐项列出 $`a_0,a_1,\ldots,a_{2869}`$，每行一个十进制整数。最优半径是 $`P`$ 在下列有理开区间中的唯一实根 $`\alpha`$。取整数 $`A`$ 为 318142930859262836359491181649935005186663866157651845538266。
 
 ```math
-\left(
-\frac{318142930859262836359491181649935005186663866157651845538266}{10^{60}},
-\frac{318142930859262836359491181649935005186663866157651845538267}{10^{60}}
-\right).
+(a,b)=\left(\frac{A}{10^{60}},\frac{A+1}{10^{60}}\right).
 ```
 
 ## 最小多项式与构型的连接
@@ -51,7 +48,8 @@ git cat-file -t ecadc602d1f93c74d528d222dae24178ac255e6c
 只有检查返回 `commit` 且所需 Windows 工具链已经就绪时，再从 `research` 运行以下命令。输出目录必须尚未创建；若示例目录已存在，请换一个新目录。
 
 ~~~powershell
-& .\scripts\serialized_compute.ps1 python -X utf8 -B n15/solution/verify.py --output-directory .tools/n15-solution-fresh
+& .\scripts\serialized_compute.ps1 python -X utf8 -B n15/solution/verify.py `
+    --output-directory .tools/n15-solution-fresh
 ~~~
 
 目前公开 GitHub 仓库无法解析上述固定提交。它包含五份压缩枚举输入与固定版本的上游程序；重放器从 Git 读取所需文件，在临时目录展开并校验摘要。因此，修正工作目录并不能补齐这些输入。
