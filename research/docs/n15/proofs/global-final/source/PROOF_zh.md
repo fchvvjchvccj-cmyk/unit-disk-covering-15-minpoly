@@ -101,8 +101,12 @@ h_i=0\quad(1\le i\le10),
 
 以及77个关于 $`(y,t)`$ 的完整驻定方程
 
+<a name="eq-2-1"></a>
+
+**式 (2.1)**
+
 ```math
-\nabla_{y,t}\left(t+\sum_e w_eg_e+\sum_{i=1}^{10}\mu_i h_i\right)=0. \tag{2.1}
+\nabla_{y,t}\left(t+\sum_e w_eg_e+\sum_{i=1}^{10}\mu_i h_i\right)=0.
 ```
 
 特别地，$`t`$ 驻定方程给出 $`\sum_e w_e=1`$。所有系数为整数、次数至多二次。实际验证器从平方距离式重建方程及 Jacobian，不将存档的浮点残差作为证明。
@@ -122,13 +126,16 @@ X_{80}=x_0+[-10^{-80},10^{-80}]^{148}
 
 具体地，令 $`e_i`$ 是 $`I-YDF(x_0)`$ 第 $`i`$ 行绝对值之和，令 $`d_k\rho`$ 保守界定 $`DF(X_\rho)-DF(x_0)`$ 的第 $`k`$ 行绝对值和。由于 $`F`$ 为二次多项式，$`d_k`$ 直接由其整数系数得到。逐行接受条件为
 
+<a name="eq-2-2"></a>
+
+**式 (2.2)**
+
 ```math
 \begin{aligned}
 &\frac{|(YF(x_0))_i|}{\rho}+e_i\\
 &\quad{}+\rho\sum_k|Y_{ik}|d_k<1,\\
 &e_i+\rho\sum_k|Y_{ik}|d_k<1.
 \end{aligned}
-\tag{2.2}
 ```
 
 全部比较使用 `Fraction`。在紧盒 $`X_{80}`$ 上，最大包含比的显示近似为 $`4.907967\cdot10^{-11}<1`$。
@@ -137,12 +144,15 @@ X_{80}=x_0+[-10^{-80},10^{-80}]^{148}
 
 验证器在紧盒内还证明
 
+<a name="eq-2-3"></a>
+
+**式 (2.3)**
+
 ```math
 \begin{gathered}
 w_e>0\quad\text{对所有 61 条杆},\\
 -\frac1{80}<\mu_i<0\quad\text{对 10 个自由锚点}.
 \end{gathered}
-\tag{2.3}
 ```
 
 后续所有根区间运算都使用已接受的 $`X_{80}`$。第1节小数端点通过 $`r_L^2<t_L<t_U<r_U^2`$ 和 $`R_L^2t_U<1<R_U^2t_L`$ 认证。
@@ -211,8 +221,12 @@ t_L-\sup|c_i-p|^2>0.
 
 不超过两端点的最大值 $`t_*`$。整段短弧属于第 $`i`$ 个圆盘；由凸性，该弧与弦围成的圆弓形也属于它。11个圆弓补齐11边形与单位圆盘之间的部分。故
 
+<a name="eq-3-1"></a>
+
+**式 (3.1)**
+
 ```math
-\boxed{r_{15}\le r_*}. \tag{3.1}
+\boxed{r_{15}\le r_*}.
 ```
 
 本构型不需要把浮点“接近零”的松弛当作等式：13个等径面由代数等式处理，4个严格松弛面由严格余量处理。
@@ -227,8 +241,12 @@ t_L-\sup|c_i-p|^2>0.
 
 令 $`V_i`$ 是普通 Voronoi 胞腔与 $`D`$ 的交。每个 $`V_i`$ 是满维闭凸集，二维内部两两不交，且
 
+<a name="eq-4-1"></a>
+
+**式 (4.1)**
+
 ```math
-V_i\subseteq\overline B(c_i,\rho). \tag{4.1}
+V_i\subseteq\overline B(c_i,\rho).
 ```
 
 因为在 $`V_i`$ 中最近圆心的距离不会超过覆盖该点的某个圆心的距离。第 $`i`$ 个圆盘的私有点是严格最近点，属于 $`V_i`$；这也保证胞腔满维（边界私有点可由连续性向 $`D`$ 内稍作移动）。
@@ -261,11 +279,15 @@ V_i\subseteq\overline B(c_i,\rho). \tag{4.1}
 
 这里使用的是必要条件的辅助图实现，允许两个节点坐标重合，并不声称补点后的实现仍是非退化 Voronoi 图。重复补点得到15个中心顶点且不改变 $`B`$。所以任何严格反例必产生五族之一的辅助杆图实现：
 
+<a name="eq-4-2"></a>
+
+**式 (4.2)**
+
 ```math
 \boxed{\begin{aligned}
 (B,I)={}&(10,5),(11,4),(12,3),\\
 &(13,2),(14,1)
-\end{aligned}}.\tag{4.2}
+\end{aligned}}.
 ```
 
 每个这样的圆盘剖分有 $`28-B`$ 个中心面。完整辅助图有 $`B`$ 个锚点、15个圆心、$`28-B`$ 个面公共点，总节点数恒为43；杆数 $`2B+3(28-B)=84-B`$。全部杆长不超过 $`\rho`$。
@@ -278,6 +300,10 @@ V_i\subseteq\overline B(c_i,\rho). \tag{4.1}
 
 沿根边 $`(0,1)`$ 的内侧三角面剥离，得到
 
+<a name="eq-5-1"></a>
+
+**式 (5.1)**
+
 ```math
 \begin{aligned}
 &T(B,I)\\
@@ -287,7 +313,6 @@ V_i\subseteq\overline B(c_i,\rho). \tag{4.1}
 &\quad{}-\sum_{j=0}^{I-1}{I-1\choose j}\\
 &\quad{}\cdot T(3,j)T(B,I-1-j)\biggr].
 \end{aligned}
-\tag{5.1}
 ```
 
 当 $`I=0`$ 时第二行置零。
@@ -360,18 +385,25 @@ C&=\frac{21954}{100000}.
 
 精确三角区间计算给出
 
+<a name="eq-6-1"></a>
+
+**式 (6.1)**
+
 ```math
 \begin{gathered}
 r_*\lt U<\sin(\pi A),\quad 2U<\sin(\pi C),\\
 U<\sin(\pi/9),\quad U<\tfrac12.
 \end{gathered}
-\tag{6.1}
 ```
 
 于是每个反例角隙满足 $`0\le g_i\le A`$。若两锚点之间有至多4条杆的路径，则其弦长小于 $`4U`$，其正向角差 $`u\in[0,1]`$ 必须满足
 
+<a name="eq-6-2"></a>
+
+**式 (6.2)**
+
 ```math
-u\lt C\quad\text{或}\quad u>1-C. \tag{6.2}
+u\lt C\quad\text{或}\quad u>1-C.
 ```
 
 这里式中的变量是正向角差 $`u`$，不是第8节的径向乘子界 $`\nu`$。
@@ -435,9 +467,16 @@ F_0=-\sum_{i=1}^{B-1}F_i,
 
 **引理。** 任意全部杆长不超过 $`r`$ 的实现都满足
 
+<a name="eq-7-1"></a>
+
+**式 (7.1)**
+
 ```math
-\sum_{i=1}^{B-1}\left[\lambda_i(b_i-a_{ix})-(|d_i|-d_{ix})\right]
-\le r\sum_e|f_e|. \tag{7.1}
+\begin{aligned}
+&\sum_{i=1}^{B-1}\bigl[\lambda_i(b_i-a_{ix})\\
+&\qquad{}-(|d_i|-d_{ix})\bigr]\\
+&\le r\sum_e|f_e|.
+\end{aligned}
 ```
 
 证明：以边的定向定义散度，则
@@ -519,8 +558,12 @@ W=\mathrm{diag}(w_0^2,\ldots,w_{60}^2,\nu^2,\ldots,\nu^2).
 
 本次严格矩阵证书为
 
+<a name="eq-8-1"></a>
+
+**式 (8.1)**
+
 ```math
-\boxed{H:=M+300A_*^{\mathsf T}WA_*-\frac9{5000}P_A\succ0.} \tag{8.1}
+\boxed{H:=M+300A_*^{\mathsf T}WA_*-\frac9{5000}P_A\succ0.}
 ```
 
 ### 8.1 正定证书的接受
@@ -546,6 +589,10 @@ W=\mathrm{diag}(w_0^2,\ldots,w_{60}^2,\nu^2,\ldots,\nu^2).
 
 于是
 
+<a name="eq-8-2"></a>
+
+**式 (8.2)**
+
 ```math
 \begin{aligned}
 &\|H-\bar H\|\\
@@ -554,7 +601,6 @@ W=\mathrm{diag}(w_0^2,\ldots,w_{60}^2,\nu^2,\ldots,\nu^2).
 &\quad{}+\delta_W(11+\delta_A)^2\biggr]\\
 &<10^{-9}.
 \end{aligned}
-\tag{8.2}
 ```
 
 此处 $`|w_e^2-\bar w_e^2|\le\epsilon/4`$ 由严格权界和舍入误差得到；圆约束的 $`\nu^2`$ 无舍入误差。
@@ -571,8 +617,12 @@ R^{\mathsf T}(\bar H-10^{-9}I)R,
 
 **定理。** 任一相同61杆图的实现，若 $`q_0=(1,0)`$、其余锚点在单位圆上、全部杆长 $`\le r_*`$，并且
 
+<a name="eq-8-3"></a>
+
+**式 (8.3)**
+
 ```math
-\boxed{\left(\sum_{i=1}^{10}|q_i-q_i^*|^2\right)^{1/2}\le\frac{13}{100}}, \tag{8.3}
+\boxed{\left(\sum_{i=1}^{10}|q_i-q_i^*|^2\right)^{1/2}\le\frac{13}{100}},
 ```
 
 则该活跃图的全部76个几何坐标等于候选。没有额外假设任何圆心或活跃面公共点位于候选附近。
@@ -594,11 +644,23 @@ v_e=|d_u-d_v|^2\ge0,
 
 驻定方程与 $`d`$ 作内积，使用正杆权及 $`-\mu_i<\nu`$，得到
 
+<a name="eq-8-4"></a>
+
+**式 (8.4)**
+
 ```math
-\sum_e w_e(s_e+v_e)=\sum_i(-\mu_i)u_i\le\nu a^2. \tag{8.4}
+\begin{aligned}
+&\sum_e w_e(s_e+v_e)\\
+&=\sum_i(-\mu_i)u_i\\
+&\le\nu a^2.
+\end{aligned}
 ```
 
 因所有项非负，
+
+<a name="eq-8-5"></a>
+
+**式 (8.5)**
 
 ```math
 \begin{aligned}
@@ -607,17 +669,19 @@ d^{\mathsf T}A_*^{\mathsf T}WA_*d\\
 &\quad{}+\nu^2\sum_i u_i^2\\
 &\le2\nu^2a^4.
 \end{aligned}
-\tag{8.5}
 ```
 
 另由 (8.4) 的等式部分，
+
+<a name="eq-8-6"></a>
+
+**式 (8.6)**
 
 ```math
 \begin{aligned}
 d^{\mathsf T}Md&=\sum_e w_ev_e+\sum_i\mu_i u_i\\
 &=-\sum_e w_es_e\le0.
 \end{aligned}
-\tag{8.6}
 ```
 
 若 $`d\ne0`$，(8.1)、(8.5)、(8.6) 导致
