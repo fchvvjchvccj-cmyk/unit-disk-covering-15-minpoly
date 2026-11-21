@@ -2,12 +2,12 @@
 
 设 $P(t)=\sum_{j=0}^{2869}a_jt^j$。[系数文件](../../n15/solution/coefficients.json)逐项列出 $a_0,a_1,\ldots,a_{2869}$，每行一个十进制整数。最优半径是 $P$ 在下列有理开区间中的唯一实根 $\alpha$：
 
-$$
+```math
 \left(
 \frac{318142930859262836359491181649935005186663866157651845538266}{10^{60}},
 \frac{318142930859262836359491181649935005186663866157651845538267}{10^{60}}
 \right).
-$$
+```
 
 ## 最小多项式与构型的连接
 
@@ -19,15 +19,15 @@ $P$ 本原且首项为正。五个良素数上各自分解后，逐个验证模�
 
 令 $\xi$ 为[整数方程组](../../n15/proofs/global-final/replay/core/system15.py)在[有理盒](../../n15/proofs/global-final/replay/core/root15.json)中的唯一根。盒中心是逐项的 `xnum/Qx`，每一维半宽 $10^{-80}$。从零编号，$\xi_{76}=\alpha^2$。所交付构型依次为
 
-$$
+```math
 c_{i+1}=(\xi_{20+2i},\xi_{21+2i}),\qquad 0\le i<15.
-$$
+```
 
 [有序圆心数据](../../n15/solution/ordered-centers.json)逐行给出对应的坐标索引和有理盒中心分子。预条件后的压缩映射严格把盒映入内部，唯一性适用于整组 148 个坐标，因而也唯一指定这组有序圆心。[原根核验程序](../../n15/proofs/global-final/replay/core/verify_root15.py) · [148 元根至消元输入的连接](../../n15/proofs/global-final/axis-chain-20261118.json)
 
 ## 连续覆盖与全局最优性
 
-对于上述构型，39 个有向三角形拼成以 11 个边界接点为顶点的拓扑圆盘，绕数检验给出内部的覆盖；逐面用公共点和双圆三角形引理验证。外侧余下的 11 个圆弓通过弧段引理验证，合起来覆盖整个闭单位盘。因此 $R_D(C_*)\le\alpha$。[覆盖证明及引理](proofs/global-final/source/PROOF_zh.md) · [覆盖核验程序](../../n15/proofs/global-final/replay/core/verify_upper15.py)
+对于上述构型，39 个有向三角形拼成以 11 个边界接点为顶点的拓扑圆盘，绕数检验给出内部的覆盖；逐面用公共点和双圆三角形引理验证。外侧余下的 11 个圆弓通过弧段引理验证，合起来覆盖整个闭单位盘。因此 $R_D(C_*)\le\alpha$。[覆盖证明及引理](proofs/global-final/source/PROOF-reading.zh.md) · [覆盖核验程序](../../n15/proofs/global-final/replay/core/verify_upper15.py)
 
 若存在半径严格小于 $\alpha$ 的覆盖，正松量允许一般位置扰动。取极小子覆盖后，Voronoi 对偶归约把反例送入五族辅助杆图，此归约处理重合圆心、冗余圆盘及退化情形。独立组合计数以轨道质量和根面递推验证了五族的完备性。在 11,950,884 个组合类型中，度量不等式排除 11,907,870 个。剩余的 43,013 个非候选类型和一个候选类型经过穷尽分支核验，未决叶节点为零。于是对任意 $C\in(\mathbb R^2)^{15}$ 均有 $R_D(C)\ge\alpha$，从而 $R_D(C_*)=r_D(15)=\alpha$。[反例归约](proofs/global-final/reduction.zh.md) · [全局下界证明](proofs/global-final/global-proof.zh.md) · [完整重放结果](../../n15/proofs/global-final/master-20261118.json)
 

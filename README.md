@@ -4,7 +4,7 @@
 
 2026-11-21 修订的中文论文按摘要、引言、预备知识、主要结果、结论和参考文献组织正文。主定理位于第 2 页，后续各节给出连续覆盖上界、任意圆心配置的全局下界，以及最优半径与多项式隔离实根的对应。[阅读八页论文《十五个全等圆盘覆盖单位圆盘的最优半径》](十五个全等圆盘覆盖单位圆盘的最优半径.pdf)
 
-[阅读完整证明](PROOF.zh.md) · [查看七页 PDF](十五圆盘最优覆盖证明.pdf) · [下载完整离线资料包](https://github.com/fchvvjchvccj-cmyk/unit-disk-covering-15-minpoly/releases/download/v1.0.0/unit-disk-covering-15-minpoly-v1.0.0.zip)
+[阅读完整证明](PROOF.zh.md) · [查看完整证明 PDF](十五圆盘最优覆盖证明.pdf) · [下载完整离线资料包](https://github.com/fchvvjchvccj-cmyk/unit-disk-covering-15-minpoly/releases/download/v1.0.0/unit-disk-covering-15-minpoly-v1.0.0.zip)
 
 ## 证明与数据
 
@@ -13,6 +13,7 @@
 | [整系数数组](research/n15/solution/coefficients.json) | 从常数项到最高次项排列。本原、首项为正；除以首项系数即得首一最小多项式。 |
 | [有序圆心](research/n15/solution/ordered-centers.json) | 由多项式系统及有理隔离盒精确指定 15 个圆心。 |
 | [实根、隔离端点和协议指纹](research/n15/solution/solution.json) | 指定区间宽度为 10⁻⁶⁰。 |
+| [上游几何证明（阅读版）](research/docs/n15/proofs/global-final/source/PROOF-reading.zh.md) | 连续覆盖和全局下界的逐节推导，附上游原件链接。 |
 | [同根证明](research/docs/n15/algebra/radius-identity.md) | 将隔离实根提升到经过唯一性认证的六维几何根盒。 |
 | [复核结果](research/n15/solution/replay-verified.json) | 11,950,884 个组合类型全部核对，未决叶节点为零；24,000 个整数特化点验证代数恒等式。 |
 | [证明附录](attachments/n15-proof-appendix-20261118.zip) | 文稿所附的精确方程、根盒、五个有理函数、整数证书与推导。 |
@@ -22,6 +23,12 @@
 几何构型、覆盖整个闭单位盘的上界以及排除所有更小半径覆盖的全局下界沿用 VonEquinox 的固定版本，并已在原项目重放。四方向代数约化、2,869 次半径多项式的重建、不可约性、实根隔离及同根认证见本仓库的完整证明。[上游几何证明包](https://github.com/VonEquinox/DiskCoveringSolve/tree/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle)
 
 下载并解压 **v1.0.0** 的完整 ZIP，打开 `打开文稿.html` 即可离线阅读。包内含原始附件、上游目录全部 75 个文件、复核代码、历史输入索引和逐文件 SHA-256 清单。复核程序及其所需的固定 Git 输入和 Windows 工具链见[复核入口](research/n15/solution/verify.py)与[运行记录](research/docs/n15/solution.zh.md)。
+
+## 文档排版维护
+
+2026-11-21 修正 GitHub 上证明的章节层级和数学公式排版，重新分页排印完整证明 PDF，并恢复其中的引用链接。上游证明提供单独的阅读版，校验所用的原件与 v1.0.0 离线 ZIP 保留原始版本。
+
+## 校验摘要
 
 **完整离线 ZIP 的 SHA-256**
 
