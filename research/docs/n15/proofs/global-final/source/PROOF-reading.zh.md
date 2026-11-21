@@ -124,9 +124,9 @@ X_{80}=x_0+[-10^{-80},10^{-80}]^{148}
 
 ```math
 \begin{aligned}
-\frac{|(YF(x_0))_i|}{\rho}+e_i\\
-&+\rho\sum_k|Y_{ik}|d_k<1,\\
-e_i&+\rho\sum_k|Y_{ik}|d_k<1.
+&\frac{|(YF(x_0))_i|}{\rho}+e_i\\
+&\quad{}+\rho\sum_k|Y_{ik}|d_k<1,\\
+&e_i+\rho\sum_k|Y_{ik}|d_k<1.
 \end{aligned}
 \tag{2.2}
 ```
@@ -548,7 +548,7 @@ W=\mathrm{diag}(w_0^2,\ldots,w_{60}^2,\nu^2,\ldots,\nu^2).
 
 ```math
 \begin{aligned}
-\|H-\bar H\|\\
+&\|H-\bar H\|\\
 &\le\delta_M\\
 &\quad{}+300\biggl[\frac1{100}(22+\delta_A)\delta_A\\
 &\quad{}+\delta_W(11+\delta_A)^2\biggr]\\
