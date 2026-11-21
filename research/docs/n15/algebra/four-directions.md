@@ -33,7 +33,7 @@ u_{j+1}=\frac{u_j^2+(z_{j+1})_{76}}{2u_j},\qquad
 设 $`P`$ 是 $`\alpha`$ 的本原最小多项式，则 $`P`$ 在整数环整除 $`L`$，其首项绝对值至多 $`H_0=2^{10^{76}}`$。它的每个根按 $`L`$ 的 Cauchy 界至多有模 $`1+H_0`$。若 $`P`$ 有两个不同根，取其间距 $`s`$，在非零整数判别式的根差乘积中单独保留这对。由
 
 ```math
-1\le |\operatorname{Disc}P|\le H_0^{2d-2}s^2[2(1+H_0)]^{d(d-1)-2}
+1\le |\mathrm{Disc}P|\le H_0^{2d-2}s^2[2(1+H_0)]^{d(d-1)-2}
 ```
 
 和 $`d<10^{72}`$ 得 $`s>2^{-10^{222}}`$。一次多项式自动满足所需隔离结论。
@@ -123,11 +123,11 @@ H(\ell)=(W-\ell)(\ell\overline W-1)KJ-r^2(K+\ell J)^2.
 \end{aligned}
 ```
 
-对独立符号 $`x,y,z_0,w_0,T`$ 的整系数展开验证了 $`\operatorname{Disc}_X Q=z_0^4\Delta`$。因此可在 $`H`$ 的二次商代数取范数以消去 $`\ell`$。实际盒内 $`H`$ 的另一根上原四次判别式非零，$`H(-E)\ne0`$。选定接点处判别式对 $`\ell`$ 的导数也非零。见[消元公式](../../../n15/algebra/four-directions/eliminate.py)、[验算程序](../../../n15/algebra/four-directions/verify_elimination.py)和[三变量证书](../../../n15/algebra/four-directions/projection.json)。
+对独立符号 $`x,y,z_0,w_0,T`$ 的整系数展开验证了 $`\mathrm{Disc}_X Q=z_0^4\Delta`$。因此可在 $`H`$ 的二次商代数取范数以消去 $`\ell`$。实际盒内 $`H`$ 的另一根上原四次判别式非零，$`H(-E)\ne0`$。选定接点处判别式对 $`\ell`$ 的导数也非零。见[消元公式](../../../n15/algebra/four-directions/eliminate.py)、[验算程序](../../../n15/algebra/four-directions/verify_elimination.py)和[三变量证书](../../../n15/algebra/four-directions/projection.json)。
 
 ## 一个 104 次的方向多项式
 
-令 $`R=\operatorname{Res}_{\ell}(H,\Delta)`$，采用次数 2、8 的齐次结式，因而 $`R=h_2^8\operatorname{Norm}_{H/h_2}\Delta`$。设
+令 $`R=\mathrm{Res}_{\ell}(H,\Delta)`$，采用次数 2、8 的齐次结式，因而 $`R=h_2^8\mathrm{Norm}_{H/h_2}\Delta`$。设
 
 ```math
 F(D)=D^{36}(D+r)^{16}R.
@@ -155,8 +155,8 @@ J=\frac{d[r^2d^2+r(1+U_1)d+U_1+r^2-1]}{d+r}.
 写 $`x=r`$，只保留方向 $`A`$。辅助方向 $`E`$ 满足 $`E^2-x(A-A^{-1})E-1=0`$，另一根为 $`-1/E`$。将 $`F`$ 中的半径保留为独立变量 $`x`$，令
 
 ```math
-Z(x,A)=A^{14904}\operatorname{Norm}_{E}\!
- \left[\operatorname{Res}_D(x^{24}F,\partial_D(x^{24}F))\right].
+Z(x,A)=A^{14904}\mathrm{Norm}_{E}\!
+ \left[\mathrm{Res}_D(x^{24}F,\partial_D(x^{24}F))\right].
 ```
 
 这是整系数平面多项式。可先用 $`A^2D^2(D+x)^2H`$ 和 $`(xD)^{12}\Delta`$ 计算第一个结式，再约去 $`D^4`$ 及坐标单项式。固定 $`x`$ 时，$`H`$ 中 $`A`$ 的指数在 $`[-2,2]`$。$`\Delta`$ 对 $`T`$ 最高 12 次，显含 $`E`$ 至多 8 次。对 $`F`$ 的系数，$`A^iE^j`$ 满足 $`-16\le i\le40,\ 0\le j\le40,\ i+j\le56`$。$`x^{24}F`$ 对 $`x`$ 至多 120 次，因为清分母后的 $`H,\Delta`$ 对 $`x`$ 分别至多 6、36 次。再取一次 104 与 103 次的结式，将这些指数界乘以 207。
@@ -170,7 +170,7 @@ Z(x,A)=A^{14904}\operatorname{Norm}_{E}\!
 在 $`\mathbb Q[x,A]`$ 对 $`Z`$ 作平方自由分解，令 $`S_1`$ 为重数恰为一且依赖 $`A`$ 的不可约因子之积。目标落在其中一条曲线上。前述沿 $`s_A`$ 的驻定性，及 $`dA/ds_A\ne0`$，给出 $`S_1=\partial_A S_1=0`$。故
 
 ```math
-G(x)=\operatorname{Res}_A(S_1,\partial_A S_1)
+G(x)=\mathrm{Res}_A(S_1,\partial_A S_1)
 ```
 
 是一个**非零且在实际半径消失**的单变量关系的代数表达式。非零来自 $`S_1`$ 在 $`\mathbb Q(x)[A]`$ 平方自由。以给出的通用次数界可得 $`\deg G\le4\,031\,175\,960`$。此界只作上界。后续计算直接重建并验证包含目标的不可约因子，避免展开整个 $`G`$。
@@ -181,7 +181,7 @@ G(x)=\operatorname{Res}_A(S_1,\partial_A S_1)
 
 ```math
 \sum_i p_i^2 h_0^i h_2^{m-i}
-+\sum_{i<j} p_i p_j h_0^i h_2^{m-j}t_{j-i}.
++\sum_{i\lt j} p_i p_j h_0^i h_2^{m-j}t_{j-i}.
 ```
 
 这是将 $`h_2^mP(\ell_1)P(\ell_2)`$ 的对角项与一对交叉项合并所得。[完整整系数表](../../../n15/algebra/four-directions/carrier.csv.gz)实际列出了
@@ -219,7 +219,7 @@ P(r,A,D)+wQ(r,A,D)=A^{48}r^{24}F(D).
 
 在整数半径 2 到 1503 中有 1,500 个截面的重数一层次数恰为 1,320。固定 $`A=3`$ 的半径截面用来统一每个方向多项式的标量，以 1,480 个半径插值，另外 20 个半径核对每个系数。所得 $`(r,A)`$ 多项式的实际双次数为 $`(1436,1320)`$。对互反公因子，改用 $`X=10/3`$，以 $`A=3,1/3`$ 两个截面的首一公因子统一标量。1,470 个半径给出双次数 $`(1424,656)`$ 的 $`C(r,X)`$。另外 30 个半径以及两个独立有理半径逐系数相符。截面的次数和全参数因子的次数可以不同。这是经留出点验证的有限域插值，尚无通用恒等式把整条 $`C`$ 与特征零目标曲线等同起来。[全部原始样本](../../../n15/algebra/four-directions/plane-samples.zip) · [插值程序](../../../n15/algebra/four-directions/fit_plane.py) · [对称曲线与存储格式](../../../n15/algebra/four-directions/plane-symmetric.json)
 
-对于已列出的 $`C`$，末级结式 $`J(r)=\operatorname{Res}_X(C,C_X)`$ 的次数至多 $`1424(2\cdot656-1)=1,866,864`$。在全部 $`2^{21}`$ 个单位根上计算齐次结式并反变换，得实际次数 1,759,328。独立地在 $`r=9/16,2/5,3/7`$ 直接取结式，三值逐一相符。平方自由部分有 694,039 次，其中在 $`J`$ 中重数恰为一的因子之积有 3,152 次。这一步对给定模曲线精确。[末级程序](../../../n15/algebra/four-directions/project_mod_radius.py) · [次数、系数文件以及交叉检查](../../../n15/algebra/four-directions/mod-radius.json)
+对于已列出的 $`C`$，末级结式 $`J(r)=\mathrm{Res}_X(C,C_X)`$ 的次数至多 $`1424(2\cdot656-1)=1,866,864`$。在全部 $`2^{21}`$ 个单位根上计算齐次结式并反变换，得实际次数 1,759,328。独立地在 $`r=9/16,2/5,3/7`$ 直接取结式，三值逐一相符。平方自由部分有 694,039 次，其中在 $`J`$ 中重数恰为一的因子之积有 3,152 次。这一步对给定模曲线精确。[末级程序](../../../n15/algebra/four-directions/project_mod_radius.py) · [次数、系数文件以及交叉检查](../../../n15/algebra/four-directions/mod-radius.json)
 
 逐个将 3,152 次层的不可约因子 $`f`$ 代入 $`C`$，在 $`K=\mathbb F_p[r]/(f)`$ 中检查 $`\gcd(C,C_X)`$。有九个因子保持方向次数并给出有限普通二重根 $`X`$，次数是 1、2、12、21、64、253、655、776、1085，合计 2,869。其余因子处 $`C`$ 的方向首项消失。对这九组再以 $`A^2-XA+1=0`$ 对 208 次的方向方程取范数，方向重根的公因子均为 $`D^2+gD+1`$。在这个二次代数中，由范数的一次余式求出 $`A`$ 并用 $`E=-P/(AQ)`$ 恢复 $`E`$。直接验证原特征零公式约化模 $`p`$ 后的 $`F=F_D=F_E r_A-F_A r_E=0`$ 与雅可比可逆性，九个因子全部通过。这给出对应临界点自身的模证书。这一步取得了模坐标；其特征零连接由后续整数恒等式给出。[半径与第一方向](../../../n15/algebra/four-directions/mod-fibers.json) · [原临界方程回代](../../../n15/algebra/four-directions/mod-directions.json)
 

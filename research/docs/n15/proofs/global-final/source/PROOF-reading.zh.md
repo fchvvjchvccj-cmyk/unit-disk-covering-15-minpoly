@@ -25,8 +25,8 @@ r_{15}=\inf\{r>0:D\subseteq\bigcup_{i=0}^{14}\overline B(c_i,r),\ c_i\in\mathbb 
 ```math
 \begin{aligned}
 0.318142930859262836359491181649935005186663866157651845538266
-&<r_{15}\\
-&<0.318142930859262836359491181649935005186663866157651845538267,
+&\lt r_{15}\\
+&\lt 0.318142930859262836359491181649935005186663866157651845538267,
 \end{aligned}
 ```
 
@@ -35,8 +35,8 @@ r_{15}=\inf\{r>0:D\subseteq\bigcup_{i=0}^{14}\overline B(c_i,r),\ c_i\in\mathbb 
 ```math
 \begin{aligned}
 3.143241301320540312069843754742374999194168089922332896458380
-&<R_{15}\\
-&<3.143241301320540312069843754742374999194168089922332896458381.
+&\lt R_{15}\\
+&\lt 3.143241301320540312069843754742374999194168089922332896458381.
 \end{aligned}
 ```
 
@@ -148,7 +148,7 @@ w_e>0\quad\text{对所有61条杆},\qquad
 **公共点引理。** 若 $`|p-a_j|\le r`$ 对 $`j=1,2,3`$ 成立，则
 
 ```math
-\operatorname{conv}\{a_1,a_2,a_3\}\subseteq\bigcup_{j=1}^3\overline B(a_j,r).
+\mathrm{conv}\{a_1,a_2,a_3\}\subseteq\bigcup_{j=1}^3\overline B(a_j,r).
 ```
 
 证明：对 $`x=\sum_j\lambda_ja_j`$，$`\lambda_j\ge0`$、$`\sum\lambda_j=1`$，有
@@ -229,7 +229,7 @@ V_i\subseteq\overline B(c_i,\rho). \tag{4.1}
 
 证明：$`\rho<1`$，所以一个半径 $`\rho`$ 的圆盘在单位圆周上的足迹为空或一段短于半圆的弧。假设 $`V_i`$ 在该弧中分离地出现两次。选 $`a,b\in V_i\cap\partial D`$，使相应短弧含有一个不属于 $`V_i`$ 的开子弧。该短弧全部属于第 $`i`$ 个圆盘，其与弦 $`[a,b]`$ 所围圆弓形 $`K`$ 也属于该圆盘。
 
-由凸性 $`[a,b]\subseteq V_i`$。在开子弧中选择非交接点，它附近的某个其他胞腔 $`V_j`$ 在圆弓一侧有内部点。如果 $`V_j`$ 还在弦直线的另一侧有点，则它也在该侧有内部点；两侧内部点的连线在 $`[a,b]`$ 内部穿过弦直线。穿越点属于 $`\operatorname{int}V_j\cap V_i`$。满维闭凸集 $`V_i`$ 是其内部的闭包，这将迫使两个胞腔的二维内部相交，矛盾。
+由凸性 $`[a,b]\subseteq V_i`$。在开子弧中选择非交接点，它附近的某个其他胞腔 $`V_j`$ 在圆弓一侧有内部点。如果 $`V_j`$ 还在弦直线的另一侧有点，则它也在该侧有内部点；两侧内部点的连线在 $`[a,b]`$ 内部穿过弦直线。穿越点属于 $`\mathrm{int}V_j\cap V_i`$。满维闭凸集 $`V_i`$ 是其内部的闭包，这将迫使两个胞腔的二维内部相交，矛盾。
 
 因此 $`V_j\subseteq K\subseteq\overline B(c_i,\rho)`$。但第 $`j`$ 个圆盘的私有点属于 $`V_j`$，不可能同时属于第 $`i`$ 个圆盘。矛盾。证毕。
 
@@ -270,8 +270,9 @@ V_i\subseteq\overline B(c_i,\rho). \tag{4.1}
 T(B,I)={}&\sum_{k=2}^{B-1}\sum_{j=0}^{I}{I\choose j}
 T(k,j)T(B-k+1,I-j)\\
 &+I\left[T(B+1,I-1)-\sum_{j=0}^{I-1}{I-1\choose j}
-T(3,j)T(B,I-1-j)\right]. \tag{5.1}
+T(3,j)T(B,I-1-j)\right].
 \end{aligned}
+\tag{5.1}
 ```
 
 当 $`I=0`$ 时第二行置零。
@@ -293,7 +294,7 @@ T(3,j)T(B,I-1-j)\right]. \tag{5.1}
 在验证代表有效、代码两两不同之后，审计器精确计算
 
 ```math
-\sum_{[K]}\frac{|G|}{|\operatorname{Stab}(K)|}.
+\sum_{[K]}\frac{|G|}{|\mathrm{Stab}(K)|}.
 ```
 
 并由主验证链将其与 (5.1) 独立计算的 $`T(B,I)`$ 比较。相等即证明无遗漏。
@@ -431,7 +432,7 @@ F_0=-\sum_{i=1}^{B-1}F_i,
 法向量为整数 $`A_i/Q_A`$，截距为 $`B_i/Q_B`$。验证器逐节点核对
 
 ```math
-\operatorname{div}(F)_{q_i}
+\mathrm{div}(F)_{q_i}
 =(L_iA_i-Q_LD_i)\frac{Q_F}{Q_LQ_A},
 ```
 
@@ -461,7 +462,7 @@ M=\tfrac12\nabla_y^2\left(\sum_e w_e|z_u-z_v|^2+\sum_i\mu_i|q_i|^2\right),
 
 ```math
 \nu=\frac1{80},\qquad
-W=\operatorname{diag}(w_0^2,\ldots,w_{60}^2,\nu^2,\ldots,\nu^2).
+W=\mathrm{diag}(w_0^2,\ldots,w_{60}^2,\nu^2,\ldots,\nu^2).
 ```
 
 本次严格矩阵证书为
@@ -539,8 +540,9 @@ s_e=t_*-|z_u-z_v|^2\ge0,\qquad v_e=|d_u-d_v|^2\ge0,
 \begin{aligned}
 d^{\mathsf T}A_*^{\mathsf T}WA_*d
 &=\sum_e[w_e(s_e+v_e)]^2+\nu^2\sum_i u_i^2\\
-&\le2\nu^2a^4. \tag{8.5}
+&\le2\nu^2a^4.
 \end{aligned}
+\tag{8.5}
 ```
 
 另由 (8.4) 的等式部分，

@@ -69,11 +69,11 @@ c_j^{m_j}\max\left(1,\frac{\|N_j\|_1}{c_j\|P'\|_1}\right)^{m_j}.
 ```
 
 此式按每个单项式使用三角不等式。程序对 $`U,H,Q`$ 展开统计次数及一范数，对乘积、和与偏导使用整数上界。Sylvester 矩阵的 Hadamard 界给出
-$`|\operatorname{Res}(P,S)|\le \|P\|_1^{\deg S}\|S\|_1^n`$。
+$`|\mathrm{Res}(P,S)|\le \|P\|_1^{\deg S}\|S\|_1^n`$。
 
 选取连续整数 $`k_i`$，其最大差小于预设整数 $`K_0`$。从 $`|P(k_i)|`$ 去除所有不超过 $`K_0`$ 的素因子，以及整除 $`P`$ 的首项、$`P'(k_i)`$ 或任一 $`c_j`$ 的素因子，留下 $`m_i`$。在 $`\mathbb Z/m_i`$ 中直接计算五个坐标并回代六式。如果六式全为零，则每个 $`S(k_i)`$ 都被 $`m_i`$ 整除。
 
-**乘积整除引理。** 若 $`R=\operatorname{Res}(P,S)\ne0`$，则 $`\prod_i m_i\mid R`$。为证明，固定任意 $`q\mid\prod_i m_i`$，写 $`a_i=v_q(m_i)>0`$，仅保留这些下标。因 $`q>K_0`$，各 $`k_i`$ 模 $`q`$ 互异。因 $`q`$ 不整除首项，$`\mathbb Z_q[t]/(P)`$ 是秩 $`n`$ 的自由模。代入各 $`k_i`$ 给出到 $`\bigoplus_i\mathbb Z/q^{a_i}\mathbb Z`$ 的满射。它良定义因为 $`P(k_i)\equiv0\pmod{q^{a_i}}`$，满射由 Lagrange 插值得到，插值分母 $`k_i-k_j`$ 全是 $`q`$ 进单位。乘以 $`S`$ 的像落在核里，因此其余核的阶至少有 $`q`$ 因子 $`q^{\sum_i a_i}`$。乘法矩阵的行列式与 $`R`$ 只差一个 $`q`$ 进单位，故 $`v_q(R)\ge\sum_i a_i`$。对各素数使用该结论即得引理，允许不同 $`m_i`$ 含有共同的素因子。
+**乘积整除引理。** 若 $`R=\mathrm{Res}(P,S)\ne0`$，则 $`\prod_i m_i\mid R`$。为证明，固定任意 $`q\mid\prod_i m_i`$，写 $`a_i=v_q(m_i)>0`$，仅保留这些下标。因 $`q>K_0`$，各 $`k_i`$ 模 $`q`$ 互异。因 $`q`$ 不整除首项，$`\mathbb Z_q[t]/(P)`$ 是秩 $`n`$ 的自由模。代入各 $`k_i`$ 给出到 $`\bigoplus_i\mathbb Z/q^{a_i}\mathbb Z`$ 的满射。它良定义因为 $`P(k_i)\equiv0\pmod{q^{a_i}}`$，满射由 Lagrange 插值得到，插值分母 $`k_i-k_j`$ 全是 $`q`$ 进单位。乘以 $`S`$ 的像落在核里，因此其余核的阶至少有 $`q`$ 因子 $`q^{\sum_i a_i}`$。乘法矩阵的行列式与 $`R`$ 只差一个 $`q`$ 进单位，故 $`v_q(R)\ge\sum_i a_i`$。对各素数使用该结论即得引理，允许不同 $`m_i`$ 含有共同的素因子。
 
 每个通过的整数点贡献 $`\lfloor\log_2 m_i\rfloor`$。当总和超过六个结式上界的最大二进制对数，就迫使六个结式均为零。$`P`$ 不可约，所以 $`P`$ 整除每个 $`S`$。根 $`\beta`$ 处 $`P'\ne0`$，五个有理坐标满足全部六式。最后将 $`P`$ 的选定实根进一步以有理端点夹住，把五个有理函数的严格球外包与原构型的唯一根盒比较。[上界与整数点验算](../../../n15/algebra/four-directions/prove_integer_identity.py) · [GMP 验证器](../../../n15/algebra/four-directions/integer_identity.cpp) · [实根连接程序](../../../n15/algebra/four-directions/bind_radius.py)
 
