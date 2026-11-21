@@ -6,11 +6,10 @@
 
 它在有理数域上的次数为 **2,869**。本仓库给出半径本身的最小多项式、全部 **2,870 个整数系数**、一个严格隔离区间，以及指定实根等于几何最优值的计算机辅助证明。
 
-## 阅读与下载
+## 阅读入口
 
-- [8 页中文论文](十五个全等圆盘覆盖单位圆盘的最优半径.pdf)。主定理见第 2 页，后续各节给出连续覆盖上界、全局下界和隔离实根的证明。
-- [完整证明](PROOF.zh.md)。在 GitHub 中按章节阅读，也可[下载 7 页 PDF](十五圆盘最优覆盖证明.pdf)。
-- [v1.0.0 离线资料包](https://github.com/fchvvjchvccj-cmyk/unit-disk-covering-15-minpoly/releases/download/v1.0.0/unit-disk-covering-15-minpoly-v1.0.0.zip)。解压后打开 `打开文稿.html`。
+- [正式论文（8 页 PDF）](十五个全等圆盘覆盖单位圆盘的最优半径.pdf)。主定理见第 2 页，后续各节给出连续覆盖上界、全局下界和隔离实根的证明。
+- [完整证明与复核材料](PROOF.zh.md)。含完整推导、系数与证书下载链接，以及复核程序入口。
 
 ## 证明与数据
 
@@ -28,11 +27,11 @@
 
 几何构型、覆盖整个闭单位盘的上界以及排除所有更小半径覆盖的全局下界沿用 VonEquinox 的固定版本，并已在原项目重放。四方向代数约化、2,869 次半径多项式的重建、不可约性、实根隔离及同根认证见本仓库的完整证明。[上游几何证明包](https://github.com/VonEquinox/DiskCoveringSolve/tree/089584973f41e6374ce110f6e5b5ee456df19352/cover15/proof_bundle)
 
-下载并解压 **v1.0.0** 的完整 ZIP，打开 `打开文稿.html` 即可离线阅读。包内含原始附件、上游目录全部 75 个文件、复核代码、历史输入索引和逐文件 SHA-256 清单。复核程序及其所需的固定 Git 输入和 Windows 工具链见[复核入口](research/n15/solution/verify.py)与[运行记录](research/docs/n15/solution.zh.md)。
+下载并解压 [v1.0.0 离线资料包](https://github.com/fchvvjchvccj-cmyk/unit-disk-covering-15-minpoly/releases/download/v1.0.0/unit-disk-covering-15-minpoly-v1.0.0.zip)，打开 `打开文稿.html` 即可离线阅读。包内含原始附件、上游目录全部 75 个文件、复核代码、历史输入索引和逐文件 SHA-256 清单。复核程序及其所需的固定 Git 输入和 Windows 工具链见[复核入口](research/n15/solution/verify.py)与[运行记录](research/docs/n15/solution.zh.md)。
 
 ## 文档排版维护
 
-2026-11-21 修正 GitHub 上证明的章节层级和数学公式排版，重新分页排印完整证明 PDF，并恢复其中的引用链接。上游证明提供单独的阅读版，校验所用的原件与 v1.0.0 离线 ZIP 保留原始版本。
+2026-11-21 修正 GitHub 上证明的章节层级和数学公式排版，重新分页排印 7 页技术版 PDF，并恢复其中的引用链接。该版本保留原文件路径。上游证明提供单独的阅读版，校验所用的原件与 v1.0.0 离线 ZIP 保留原始版本。
 
 窄屏排版复查拆分了长公式和宽表，并修复 GitHub 预览中少数不等式被截断的问题。完整证明增加了章节导航。
 
